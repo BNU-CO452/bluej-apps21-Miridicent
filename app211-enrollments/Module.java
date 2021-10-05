@@ -1,9 +1,8 @@
 
 /**
  * Write a description of class Module here.
- *
- * @author (your name)
- * @version (a version number or a date)
+ * @author (Conor Briggs)
+ * @version (05/1-/2021)
  */
 public class Module
 {
@@ -19,12 +18,12 @@ public class Module
     /**
      * Create a module with code, title and credit 
      */
-    public Module(String code, String title, int credit)
+    public Module(String code, String title)
     {
         // initialise instance variables
         this.code = code;
         this.title = title;
-        this.credit = credit; 
+        credit = 0; 
     }
 
     /**
@@ -33,12 +32,33 @@ public class Module
      * @param  y  a sample parameter for a method
      * @return    the sum of x and y
      */
-    public void printheading()
+    public String getCode()
     {
-        // put your code here
-        System.out.println(" -------------------------- ");
-        
+        return this.code;
+    }
+ 
+    public String getTitle()
+    {
+        return this.title;
+    }
+    
+    public int getCredit()
+    {
+        return this.credit;
     }
     
     
-
+    public void setCredit(int credit)
+    {
+        this.credit = credit;
+       
+    }
+    
+    public void print()
+    {
+        //printHeading();
+        
+        System.out.println(" Module Code: " + code + ": " + title);
+        System.out.println();
+    }
+}
