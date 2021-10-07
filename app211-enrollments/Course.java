@@ -49,4 +49,20 @@ public class Course
         System.out.println(" --------------------------------");
         System.out.println();
     }
+    
+    public void assign(Module module)
+    {
+      this.module = module;
+    }
+    
+    public void printModule()
+    {
+      module.print();
+    }
+    
+    public void printAll()
+    {   
+      print();
+      module.print();
+    }
 }
