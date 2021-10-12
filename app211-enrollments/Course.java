@@ -63,6 +63,5 @@ public class Course
     public void printAll()
     {   
       print();
-      module.print();
     }
 }
