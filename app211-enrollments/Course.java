@@ -49,17 +49,17 @@ public class Course
         System.out.println(" --------------------------------");
         System.out.println();
     }
-    
+    // allows user to assign a moudle to this class
     public void assign(Module module)
     {
       this.module = module;
     }
-    
+    // prints the module
     public void printModule()
     {
       module.print();
     }
-    
+    // prints all information related to the object
     public void printAll()
     {   
       print();

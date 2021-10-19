@@ -1,6 +1,6 @@
 
 /**
- * Write a description of class Module here.
+ * Modules to be assigned to courses.
  * @author (Conor Briggs)
  * @version (05/1-/2021)
  */
@@ -42,6 +42,7 @@ public class Module
         return this.title;
     }
     
+    //gets credit value
     public int getCredit()
     {
         return this.credit;
