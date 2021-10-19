@@ -47,13 +47,14 @@ public class Module
         return this.credit;
     }
     
-    
+    //set credit for a module
     public void setCredit(int credit)
     {
         this.credit = credit;
        
     }
     
+    //prints moudule information
     public void print()
     {
         //printHeading();

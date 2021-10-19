@@ -1,13 +1,17 @@
-  --------------------------------
+ Student conor = new Student("Conor", 22130251);
+Course game = new Course("BT1GDV1", "Games development");
+game.print();
+ --------------------------------
    App211: Course Details
  --------------------------------
 
- Course Code: BT1GDV1: Games Development
-
+ Course Code: BT1GDV1: Games development
+conor.print();
  Student ID: 22130251 Name: Conor
+conor.enrol(game);
+conor.printCourse();
  --------------------------------
    App211: Course Details
  --------------------------------
 
- Course Code: BT1GDV1: Games Development
-
+ Course Code: BT1GDV1: Games development

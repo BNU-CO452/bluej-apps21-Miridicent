@@ -1,18 +1,14 @@
-  Module Code: CO452: Programming Concepts
+ Module program = new Module("CO452", "Programming Concepts");
+program.print();
+ Module Code: CO452: Programming Concepts
  Credit: 0
+program.setCredit(15);
+program.print();
  Module Code: CO452: Programming Concepts
  Credit: 15
- --------------------------------
-   App211: Course Details
- --------------------------------
-
- Course Code: BT1GDV1: Games Development
-
- --------------------------------
-   App211: Course Details
- --------------------------------
-
- Course Code: BT1GDV1: Games Development
-
+game.printModule();
+    Exception occurred.
+game.assign(program);
+game.printModule();
  Module Code: CO452: Programming Concepts
  Credit: 15
