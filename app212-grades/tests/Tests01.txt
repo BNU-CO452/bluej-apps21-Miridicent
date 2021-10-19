@@ -1,0 +1,33 @@
+ Student conor = new Student();
+Course game = new Course();
+conor.print();
+ Student ID: 22130251, Conor
+conor.enrol(game);
+conor.printCourse();
+ Student ID: 22130251, Conor
+
+ Course BT1GDV1: BSc Games Development
+
+Module program = new Module("co452", "Programming Concepts");
+game.createModules();
+game.addModule(program);
+ModuleMark Conorco451mark = new ModuleMark(program);
+Conorco451mark.setMark(97);
+conor.addMark(Conorco451mark);
+conor.printTranscript();
+ ------------------------------------
+ App21-02: Exam Board Transcript 2021
+        by student name
+ ------------------------------------
+ Student ID: 22130251, Conor
+
+ Course BT1GDV1: BSc Games Development
+
+
+
+ ---- 	 -------------------- 	 ------	 ---- 	 -----
+ Code 	 Module 		Credit	 Mark 	 Grade
+ ---- 	 -------------------- 	 ------	 ---- 	 -----
+
+
+ No Final Course Grade Yet!
