@@ -108,6 +108,7 @@ public class Student
        for(ModuleMark moduleMark: marks)
        {
            moduleMark.print();
+           System.out.println("/t" + course.convertToGrade(moduleMark.getValue()));
        }
     }
     
