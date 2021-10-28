@@ -17,7 +17,10 @@ public class Course
     private String title;
     
     private Grades finalGrade;
-     
+    
+    /**
+     * prints the course 
+     */
     public Course()
     {
         this("BT1GDV1", "BSc Games Development");
@@ -47,6 +50,9 @@ public class Course
 
     }
     
+    /**
+     * allows for quick module adding
+     */
     public void addModule(Module module)
     {
         if(modules.size() < MAXN_MODULES)
@@ -56,7 +62,7 @@ public class Course
     }
     
     /**
-     * 
+     * converts the marks given into a grade 
      */
     public Grades convertToGrade(int mark)
     {

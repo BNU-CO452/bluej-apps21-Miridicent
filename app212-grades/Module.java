@@ -25,13 +25,17 @@ public class Module
         this.title = title;
     }
 
-   
+    /**
+     * gets the module code 
+     */
     public String getCode()
     {
         return code;
     }
     
-    
+    /**
+     * gets the module title
+     */
     public String getTitle()
     {
         return title;

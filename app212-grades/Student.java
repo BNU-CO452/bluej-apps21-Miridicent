@@ -97,21 +97,30 @@ public class Student
         System.out.println(" Student ID: " + id + ", " + name);
     }
     
+    /**
+     * Prints the students course 
+     */
     public void printCourse()
     {
         this.print();
         course.print();
     }
     
+    /**
+     * prints the students modules 
+     */
     private void printModules()
     {
        for(ModuleMark mark: marks)
        {
-           mark.print();
-           System.out.println("\t" + course.convertToGrade(mark.getValue()));
+          mark.print();
+          System.out.println("\t" + course.convertToGrade(mark.getValue()));
        }
     }
     
+    /**
+     * Prints the students transcript 
+     */
     public void printTranscript()
     {
         System.out.println(" ------------------------------------");
