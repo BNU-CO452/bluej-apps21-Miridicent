@@ -68,7 +68,7 @@ public class Student
      */
     public void awardTestMarks()
     {
-        
+      
     }
     
     /**
@@ -108,7 +108,7 @@ public class Student
        for(ModuleMark mark: marks)
        {
            mark.print();
-           System.out.println("/t" + course.convertToGrade(mark.getValue()));
+           System.out.println("\t" + course.convertToGrade(mark.getValue()));
        }
     }
     

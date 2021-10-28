@@ -1,0 +1,150 @@
+ Student conor = new Student();
+Course game = new Course();
+Module co452 = new Module("CO452", "Programming Concepts");
+Module co450 = new Module("CO450", "Computer Architectures");
+Module co459 = new Module("CO459", "Game Design");
+Module co461 = new Module("CO461", "3d Modelling" );
+ModuleMark conorco452mark = new ModuleMark(co452);
+ModuleMark conorco450mark = new ModuleMark(co450);
+ModuleMark conorco459mark = new ModuleMark(co459);
+ModuleMark conorco461mark = new ModuleMark(co461);
+conor.enrol(game);
+game.addModule(co452);
+game.addModule(co450);
+game.addModule(co459);
+game.addModule(co461);
+conor.printTranscript();
+ ------------------------------------
+ App21-02: Exam Board Transcript 2021
+        by student name
+ ------------------------------------
+ Student ID: 22130251, Conor
+
+ Course BT1GDV1: BSc Games Development
+
+ CO452: Programming Concepts	 15 credits
+ CO450: Computer Architectures	 15 credits
+ CO459: Game Design	 15 credits
+ CO461: 3d Modelling	 15 credits
+
+ ---- 	 -------------------- 	 ------	 ---- 	 -----
+ Code 	 Module 		Credit	 Mark 	 Grade
+ ---- 	 -------------------- 	 ------	 ---- 	 -----
+
+
+ Final Course Grade = F
+conorco452mark.setMark(80);
+conorco450mark.setMark(80);
+conorco459mark.setMark(80);
+conorco461mark.setMark(80);
+conor.addMark(conorco452mark);
+conor.addMark(conorco450mark);
+conor.addMark(conorco459mark);
+conor.addMark(conorco461mark);
+conor.printTranscript();
+ ------------------------------------
+ App21-02: Exam Board Transcript 2021
+        by student name
+ ------------------------------------
+ Student ID: 22130251, Conor
+
+ Course BT1GDV1: BSc Games Development
+
+ CO452: Programming Concepts	 15 credits
+ CO450: Computer Architectures	 15 credits
+ CO459: Game Design	 15 credits
+ CO461: 3d Modelling	 15 credits
+
+ ---- 	 -------------------- 	 ------	 ---- 	 -----
+ Code 	 Module 		Credit	 Mark 	 Grade
+ ---- 	 -------------------- 	 ------	 ---- 	 -----
+
+ CO452: Programming Concepts	  15	80t/A
+
+ CO450: Computer Architectures	  15	80t/A
+
+ CO459: Game Design	  15	80t/A
+
+ CO461: 3d Modelling	  15	80t/A
+
+
+ Final Course Grade = A
+Student conor = new Student();
+Course game = new Course();
+Module co452 = new Module("CO452" , "Programming Concepts");
+Module co450 = new Module("CO450", "Computer Architecture");
+Module co461 = new Module("CO461", "3D Modelling");
+Module co459 = new Module("CO459", "Game Design");
+ModuleMark conorco452Ma1 = new ModuleMark(co452);
+ModuleMark conorco450Ma1 = new ModuleMark(co450);
+ModuleMark conorco461Ma1 = new ModuleMark(co461);
+ModuleMark conorco459Ma1 = new ModuleMark(co459);
+conor.enrol(game);
+game.addModule(co452);
+game.addModule(co450);
+game.addModule(co461);
+game.addModule(co459);
+conor.addMark(conorco452Ma1);
+conor.addMark(conorco450Ma1);
+conor.addMark(conorco461Ma1);
+conor.addMark(conorco459Ma1);
+conor.printTranscript();
+ ------------------------------------
+ App21-02: Exam Board Transcript 2021
+        by student name
+ ------------------------------------
+ Student ID: 22130251, Conor
+
+ Course BT1GDV1: BSc Games Development
+
+ CO452: Programming Concepts	 15 credits
+ CO450: Computer Architecture	 15 credits
+ CO461: 3D Modelling	 15 credits
+ CO459: Game Design	 15 credits
+
+ ---- 	 -------------------- 	 ------	 ---- 	 -----
+ Code 	 Module 		Credit	 Mark 	 Grade
+ ---- 	 -------------------- 	 ------	 ---- 	 -----
+
+ CO452: Programming Concepts	  0	0	F
+
+ CO450: Computer Architecture	  0	0	F
+
+ CO461: 3D Modelling	  0	0	F
+
+ CO459: Game Design	  0	0	F
+
+
+ Final Course Grade = F
+conorco452Ma1.setMark(80);
+conorco450Ma1.setMark(80);
+conorco461Ma1.setMark(80);
+conorco459Ma1.setMark(80);
+conor.printTranscript();
+ ------------------------------------
+ App21-02: Exam Board Transcript 2021
+        by student name
+ ------------------------------------
+ Student ID: 22130251, Conor
+
+ Course BT1GDV1: BSc Games Development
+
+ CO452: Programming Concepts	 15 credits
+ CO450: Computer Architecture	 15 credits
+ CO461: 3D Modelling	 15 credits
+ CO459: Game Design	 15 credits
+
+ ---- 	 -------------------- 	 ------	 ---- 	 -----
+ Code 	 Module 		Credit	 Mark 	 Grade
+ ---- 	 -------------------- 	 ------	 ---- 	 -----
+
+ CO452: Programming Concepts	  15	80	A
+
+ CO450: Computer Architecture	  15	80	A
+
+ CO461: 3D Modelling	  15	80	A
+
+ CO459: Game Design	  15	80	A
+
+
+ Final Course Grade = A
