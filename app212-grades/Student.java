@@ -138,6 +138,7 @@ public class Student
         
         printModules();
         
+        
         Grades finalGrade = course.calculateGrade(marks);
         
         System.out.println();
