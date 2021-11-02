@@ -23,9 +23,16 @@ public class StockDemo
         // Add at least 10 products, they must be unique to you
         // Make sure the ids are sequential numbers
         
-        stock.add(new Product(101, "Samsung Galaxy S20"));
-        stock.add(new Product(102, "Apple iPhone 12"));
-        stock.add(new Product(103, "Google Pixel 4A"));
+        stock.add(new Product(101, "Elisans Draught"));
+        stock.add(new Product(102, "1001 Spells for Dummies"));
+        stock.add(new Product(103, "Stun Orb"));
+        stock.add(new Product(104, "Mana Locator"));
+        stock.add(new Product(105, "Novice Ritual Magic Set"));
+        stock.add(new Product(106, "Cure Alls"));
+        
+        
+        
+        runDemo();
     }
     
     /**
@@ -50,9 +57,11 @@ public class StockDemo
     
     private void buyProducts()
     {
+        stock.buyProduct(101, 500);
     }
 
     private void sellProducts()
     {
+        stock.sellProduct(101,500);
     }    
 }
