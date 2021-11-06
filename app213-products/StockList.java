@@ -47,14 +47,26 @@ public class StockList
     public void buyProduct(int productID, int amount)
     {
      Product product = findProduct(productID);
-    if(product != null)
-       {
-           product.increaseQuantity(amount);
-       }
-    else
-       {
-           System.out.println("Can't find the product"); 
-       }
+     if(product != null) 
+     {
+            if(product.getQuantity() < 1000)
+            {
+                product.increaseQuantity(amount);
+                System.out.println("Bought " + amount + product.getName());
+                
+                // printout message
+            }
+            else
+            {
+                System.out.println("Not enough shelf space for " + product.getName() + "Please sell the existing stock");
+                // printout message
+            }
+     }
+     else
+     {
+                System.out.println ("Couldn't find product");
+
+     }
     }
     
     /**
@@ -87,22 +99,27 @@ public class StockList
         
         if(product != null) 
         {
-            if(product.getQuantity() > 0)
+            if(product.getQuantity() > 0 && product.getQuantity() > amount)
             {
                 product.decreaseQuantity(amount);
                 System.out.println("Sold " + amount + product.getName());
                 
                 // printout message
             }
-            else
+            else if(product.getQuantity() == 0)
             {
                 System.out.println("The product" + product.getName() + "is out of stock");
                 // printout message
             }
+            
+            else 
+            {
+                System.out.println("Can't sell " + amount + " of " + product.getName() + " because we only have" + product.getQuantity());
+            }
         }
         else
         {
-            // printout message
+            System.out.println ("Couldn't find product");
         }
     }    
 
