@@ -52,7 +52,7 @@ public class StockList
             if(product.getQuantity() < 1000)
             {
                 product.increaseQuantity(amount);
-                System.out.println("Bought " + amount + product.getName());
+                System.out.println("Bought " + amount + " of " + product.getName());
                 
                 // printout message
             }
@@ -83,6 +83,16 @@ public class StockList
         return null;
     }
     
+    
+    public void removeProduct (int productID)
+    {
+      for (Product product : stock)
+      {
+          if(product.getID() == productID)
+              stock.remove(product);
+      }
+    }
+    
     public void sellProuduct(int productID)
     {
        sellProduct(productID, 1);
@@ -102,7 +112,7 @@ public class StockList
             if(product.getQuantity() > 0 && product.getQuantity() > amount)
             {
                 product.decreaseQuantity(amount);
-                System.out.println("Sold " + amount + product.getName());
+                System.out.println("Sold " + amount + " of " + product.getName());
                 
                 // printout message
             }
