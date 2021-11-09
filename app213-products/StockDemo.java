@@ -11,7 +11,7 @@
 public class StockDemo
 {
     // The stock manager.
-    private StockList stock;
+    public StockList stock;
 
     /**
      * Create a StockManager and populate it with at least
@@ -56,7 +56,10 @@ public class StockDemo
         stock.print();        
 
         sellProducts();
-        stock.print();        
+        stock.print();
+        
+        removeProducts();
+        stock.print();
     }
     
     private void buyProducts()
@@ -87,4 +90,9 @@ public class StockDemo
         stock.sellProduct(110, 476);
     }  
     
+    private void removeProducts()
+    {
+        stock.removeProduct(1);
+        stock.removeProduct(3);
+    }
 }
