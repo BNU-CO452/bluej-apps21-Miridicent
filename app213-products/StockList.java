@@ -11,6 +11,8 @@ public class StockList
 {
     // A list of the products.
     public ArrayList<Product> stock;
+    
+     
 
     /**
      * Initialise the stock manager.
@@ -78,7 +80,9 @@ public class StockList
         for(Product product : stock)
         {
             if(product.getID() == productID)
+                product = product;
                 return product;
+                
         }
         return null;
     }
@@ -86,11 +90,9 @@ public class StockList
     
     public void removeProduct (int productID)
     {
-      for (Product product : stock)
-      {
-          if(product.getID() == productID)
-              stock.remove(product);
-      }
+      Product product = findProduct(productID);
+      stock.remove(product);
+      
     }
     
     public void sellProuduct(int productID)

@@ -78,21 +78,20 @@ public class StockDemo
 
     private void sellProducts()
     {
-        stock.sellProduct(101, 500);
-        stock.sellProduct(102, 556);
-        stock.sellProduct(103, 789);
-        stock.sellProduct(104, 102);
-        stock.sellProduct(105, 1234);
-        stock.sellProduct(106, 435);
-        stock.sellProduct(107, 123);
-        stock.sellProduct(108, 678);
-        stock.sellProduct(109, 1678);
-        stock.sellProduct(110, 476);
+        stock.sellProduct(1, 500);
+        stock.sellProduct(2, 556);
+        stock.sellProduct(3, 789);
+        stock.sellProduct(4, 102);
+        stock.sellProduct(5, 1234);
+        stock.sellProduct(6, 435);
+        stock.sellProduct(7, 123);
+        stock.sellProduct(8, 678);
+        stock.sellProduct(9, 1678);
+        stock.sellProduct(10, 476);
     }  
     
     private void removeProducts()
     {
         stock.removeProduct(1);
-        stock.removeProduct(3);
     }
 }
