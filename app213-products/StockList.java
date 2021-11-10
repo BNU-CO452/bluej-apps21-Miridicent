@@ -11,7 +11,6 @@ public class StockList
 {
     // A list of the products.
     public ArrayList<Product> stock;
-    
      
 
     /**
@@ -48,9 +47,9 @@ public class StockList
      */
     public void buyProduct(int productID, int amount)
     {
-     Product product = findProduct(productID);
-     if(product != null) 
-     {
+        Product product = findProduct(productID);
+        if(product != null) 
+        {
             if(product.getQuantity() < 1000)
             {
                 product.increaseQuantity(amount);
@@ -63,9 +62,9 @@ public class StockList
                 System.out.println("Not enough shelf space for " + product.getName() + "Please sell the existing stock");
                 // printout message
             }
-     }
-     else
-     {
+        }
+        else
+        {
                 System.out.println ("Couldn't find product");
 
      }
@@ -80,24 +79,60 @@ public class StockList
         for(Product product : stock)
         {
             if(product.getID() == productID)
-                product = product;
                 return product;
                 
         }
         return null;
     }
     
+    /**
+     * Finds products based on name 
+     * if not found return null
+     */
+    public Product findName(String productName)
+    {
+        for(Product product : stock)
+        {
+            if(product.getName() == productName)
+            System.out.println(product);
+            return product;
+        }
+        return null;
+    }
     
+    /**
+     * Finds product specified and removes it from the list
+     * if not found return null
+     */
     public void removeProduct (int productID)
     {
-      Product product = findProduct(productID);
-      stock.remove(product);
+        Product product = findProduct(productID);
+        product = product;
+        stock.remove(product);
       
     }
     
+    /**
+     * Checks the amount in each product, 
+     * if it's lower than the specified number then it will be displayed
+     */
+    public Product checkProduct(int productAmount)
+    {
+        for(Product product : stock)
+        {
+          if(product.getQuantity() <= 10)
+          System.out.println(product);
+          return product;
+        }
+        return null;
+    }   
+    
+    /**
+     * A method to sell a single quantity of the product
+     */
     public void sellProuduct(int productID)
     {
-       sellProduct(productID, 1);
+        sellProduct(productID, 1);
     }
     
     /**
@@ -179,6 +214,9 @@ public class StockList
         System.out.println();
     }
     
+    /**
+     * prints the heading of the stock list
+     */
     public void printHeading()
     {
         System.out.println();
