@@ -62,6 +62,10 @@ public class StockDemo
        stock.print();
        
        findProductname();
+       stock.print();
+       
+       checkProductamount();
+       
     }
     
    /**
@@ -90,8 +94,8 @@ public class StockDemo
     {
        stock.sellProduct(1, 500);
        stock.sellProduct(2, 556);
-       stock.sellProduct(3, 789);
-       stock.sellProduct(4, 102);
+       stock.sellProduct(3, 990);
+       stock.sellProduct(4, 1315);
        stock.sellProduct(5, 1234);
        stock.sellProduct(6, 435);
        stock.sellProduct(7, 123);
@@ -121,14 +125,6 @@ public class StockDemo
    private void checkProductamount()
    {
        stock.checkProduct(1);
-       stock.checkProduct(2);
-       stock.checkProduct(3);
-       stock.checkProduct(4);
-       stock.checkProduct(5);
-       stock.checkProduct(6);
-       stock.checkProduct(7);
-       stock.checkProduct(8);
-       stock.checkProduct(9);
-       stock.checkProduct(10);
+       
    }
 }

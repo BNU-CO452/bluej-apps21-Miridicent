@@ -95,7 +95,6 @@ public class StockList
         {
             if(product.getName() == productName)
             System.out.println(product);
-            return product;
         }
         return null;
     }
@@ -116,13 +115,12 @@ public class StockList
      * Checks the amount in each product, 
      * if it's lower than the specified number then it will be displayed
      */
-    public Product checkProduct(int productAmount)
+    public Product checkProduct(int productID)
     {
-        for(Product product : stock)
+        for(Product product : stock) 
         {
-          if(product.getQuantity() <= 10)
-          System.out.println(product);
-          return product;
+          if(product.getQuantity() <= 50)
+          System.out.println(product + " stock is getting low");
         }
         return null;
     }   
