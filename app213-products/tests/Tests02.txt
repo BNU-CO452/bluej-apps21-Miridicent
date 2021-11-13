@@ -1,0 +1,199 @@
+
+ ID 3: Stun Orb stock level: 10 stock is getting low
+ ID 4: Mana Locator stock level: 8 stock is getting low
+ ID 5: Cure Minor stock level: 18 stock is getting low
+StockDemo stockDem1 = new StockDemo();
+
+ Conor's Stock List
+ ====================
+
+ ID 1: Elisans Draught stock level: 0
+ ID 2: 1001 Spells for Dummies stock level: 0
+ ID 3: Stun Orb stock level: 0
+ ID 4: Mana Locator stock level: 0
+ ID 5: Cure Minor stock level: 0
+ ID 6: Cure Alls stock level: 0
+ ID 7: Arcantus Venom stock level: 0
+ ID 8: Guide to Elemental Manipulation stock level: 0
+ ID 9: Tulaclion Remedy stock level: 0
+ ID 10: Kitsune Repellent stock level: 0
+
+Bought 891 of Elisans Draught
+Bought 600 of 1001 Spells for Dummies
+Bought 1000 of Stun Orb
+Bought 14 of Mana Locator
+Bought 23 of Cure Minor
+Bought 901 of Cure Alls
+Bought 869 of Arcantus Venom
+Bought 1102 of Guide to Elemental Manipulation
+Bought 3456 of Tulaclion Remedy
+Bought 899 of Kitsune Repellent
+
+ Conor's Stock List
+ ====================
+
+ ID 1: Elisans Draught stock level: 891
+ ID 2: 1001 Spells for Dummies stock level: 600
+ ID 3: Stun Orb stock level: 1000
+ ID 4: Mana Locator stock level: 14
+ ID 5: Cure Minor stock level: 23
+ ID 6: Cure Alls stock level: 901
+ ID 7: Arcantus Venom stock level: 869
+ ID 8: Guide to Elemental Manipulation stock level: 1102
+ ID 9: Tulaclion Remedy stock level: 3456
+ ID 10: Kitsune Repellent stock level: 899
+
+Sold 500 of Elisans Draught
+Sold 556 of 1001 Spells for Dummies
+Sold 990 of Stun Orb
+Can't sell 1315 of Mana Locator because we only have14
+Can't sell 1234 of Cure Minor because we only have23
+Sold 435 of Cure Alls
+Sold 123 of Arcantus Venom
+Sold 678 of Guide to Elemental Manipulation
+Sold 1678 of Tulaclion Remedy
+Sold 476 of Kitsune Repellent
+
+ Conor's Stock List
+ ====================
+
+ ID 1: Elisans Draught stock level: 391
+ ID 2: 1001 Spells for Dummies stock level: 44
+ ID 3: Stun Orb stock level: 10
+ ID 4: Mana Locator stock level: 14
+ ID 5: Cure Minor stock level: 23
+ ID 6: Cure Alls stock level: 466
+ ID 7: Arcantus Venom stock level: 746
+ ID 8: Guide to Elemental Manipulation stock level: 424
+ ID 9: Tulaclion Remedy stock level: 1778
+ ID 10: Kitsune Repellent stock level: 423
+
+
+ Conor's Stock List
+ ====================
+
+ ID 3: Stun Orb stock level: 10
+ ID 4: Mana Locator stock level: 14
+ ID 5: Cure Minor stock level: 23
+ ID 6: Cure Alls stock level: 466
+ ID 7: Arcantus Venom stock level: 746
+ ID 8: Guide to Elemental Manipulation stock level: 424
+ ID 9: Tulaclion Remedy stock level: 1778
+ ID 10: Kitsune Repellent stock level: 423
+
+Name search List ID 5: Cure Minor stock level: 23
+ ID 6: Cure Alls stock level: 466
+
+ Conor's Stock List
+ ====================
+
+ ID 3: Stun Orb stock level: 10
+ ID 4: Mana Locator stock level: 14
+ ID 5: Cure Minor stock level: 23
+ ID 6: Cure Alls stock level: 466
+ ID 7: Arcantus Venom stock level: 746
+ ID 8: Guide to Elemental Manipulation stock level: 424
+ ID 9: Tulaclion Remedy stock level: 1778
+ ID 10: Kitsune Repellent stock level: 423
+
+ ID 3: Stun Orb stock level: 10 stock is getting low
+ ID 4: Mana Locator stock level: 14 stock is getting low
+ ID 5: Cure Minor stock level: 23 stock is getting low
+StockDemo stockDem1 = new StockDemo();
+
+ Conor's Stock List
+ ====================
+
+ ID 1: Elisans Draught stock level: 0
+ ID 2: 1001 Spells for Dummies stock level: 0
+ ID 3: Stun Orb stock level: 0
+ ID 4: Mana Locator stock level: 0
+ ID 5: Cure Minor stock level: 0
+ ID 6: Cure Alls stock level: 0
+ ID 7: Arcantus Venom stock level: 0
+ ID 8: Guide to Elemental Manipulation stock level: 0
+ ID 9: Tulaclion Remedy stock level: 0
+ ID 10: Kitsune Repellent stock level: 0
+
+Bought 426 of Elisans Draught
+Bought 600 of 1001 Spells for Dummies
+Bought 1000 of Stun Orb
+Bought 21 of Mana Locator
+Bought 19 of Cure Minor
+Bought 901 of Cure Alls
+Bought 869 of Arcantus Venom
+Bought 1102 of Guide to Elemental Manipulation
+Bought 3456 of Tulaclion Remedy
+Bought 899 of Kitsune Repellent
+
+ Conor's Stock List
+ ====================
+
+ ID 1: Elisans Draught stock level: 426
+ ID 2: 1001 Spells for Dummies stock level: 600
+ ID 3: Stun Orb stock level: 1000
+ ID 4: Mana Locator stock level: 21
+ ID 5: Cure Minor stock level: 19
+ ID 6: Cure Alls stock level: 901
+ ID 7: Arcantus Venom stock level: 869
+ ID 8: Guide to Elemental Manipulation stock level: 1102
+ ID 9: Tulaclion Remedy stock level: 3456
+ ID 10: Kitsune Repellent stock level: 899
+
+Can't sell 500 of Elisans Draught because we only have426
+Sold 556 of 1001 Spells for Dummies
+Sold 990 of Stun Orb
+Can't sell 1315 of Mana Locator because we only have21
+Can't sell 1234 of Cure Minor because we only have19
+Sold 435 of Cure Alls
+Sold 123 of Arcantus Venom
+Sold 678 of Guide to Elemental Manipulation
+Sold 1678 of Tulaclion Remedy
+Sold 476 of Kitsune Repellent
+
+ Conor's Stock List
+ ====================
+
+ ID 1: Elisans Draught stock level: 426
+ ID 2: 1001 Spells for Dummies stock level: 44
+ ID 3: Stun Orb stock level: 10
+ ID 4: Mana Locator stock level: 21
+ ID 5: Cure Minor stock level: 19
+ ID 6: Cure Alls stock level: 466
+ ID 7: Arcantus Venom stock level: 746
+ ID 8: Guide to Elemental Manipulation stock level: 424
+ ID 9: Tulaclion Remedy stock level: 1778
+ ID 10: Kitsune Repellent stock level: 423
+
+
+ Conor's Stock List
+ ====================
+
+ ID 3: Stun Orb stock level: 10
+ ID 4: Mana Locator stock level: 21
+ ID 5: Cure Minor stock level: 19
+ ID 6: Cure Alls stock level: 466
+ ID 7: Arcantus Venom stock level: 746
+ ID 8: Guide to Elemental Manipulation stock level: 424
+ ID 9: Tulaclion Remedy stock level: 1778
+ ID 10: Kitsune Repellent stock level: 423
+
+Name search List
+ ID 5: Cure Minor stock level: 19
+ ID 6: Cure Alls stock level: 466
+
+ Conor's Stock List
+ ====================
+
+ ID 3: Stun Orb stock level: 10
+ ID 4: Mana Locator stock level: 21
+ ID 5: Cure Minor stock level: 19
+ ID 6: Cure Alls stock level: 466
+ ID 7: Arcantus Venom stock level: 746
+ ID 8: Guide to Elemental Manipulation stock level: 424
+ ID 9: Tulaclion Remedy stock level: 1778
+ ID 10: Kitsune Repellent stock level: 423
+
+ ID 3: Stun Orb stock level: 10 stock is getting low
+ ID 4: Mana Locator stock level: 21 stock is getting low
+ ID 5: Cure Minor stock level: 19 stock is getting low

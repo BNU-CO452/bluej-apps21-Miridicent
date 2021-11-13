@@ -1,4 +1,4 @@
-
+import java.util.Random;
 /**
  * Demonstrate the StockManager and Product classes.
  * The demonstration becomes properly functional as
@@ -12,6 +12,8 @@ public class StockDemo
 {
    // The stock manager.
    public StockList stock;
+   
+   private Random random;
 
    /**
      * Create a StockManager and populate it with at least
@@ -20,7 +22,7 @@ public class StockDemo
     public StockDemo() 
     {
        this.stock = new StockList();
-        
+    this.random = new Random();
        // Add at least 10 products, they must be unique to you
        // Make sure the ids are sequential numbers
         
@@ -28,7 +30,7 @@ public class StockDemo
        stock.add(new Product(2, "1001 Spells for Dummies"));
        stock.add(new Product(3, "Stun Orb"));
        stock.add(new Product(4, "Mana Locator"));
-       stock.add(new Product(5, "Novice Ritual Magic Set"));
+       stock.add(new Product(5, "Cure Minor"));
        stock.add(new Product(6, "Cure Alls"));
        stock.add(new Product(7, "Arcantus Venom"));
        stock.add(new Product(8, "Guide to Elemental Manipulation"));
@@ -74,11 +76,11 @@ public class StockDemo
     */
     private void buyProducts()
     {
-       stock.buyProduct(1, 505);
+       stock.buyProduct(1, random.nextInt(1001));
        stock.buyProduct(2, 600);
        stock.buyProduct(3, 1000);
-       stock.buyProduct(4, 1340);
-       stock.buyProduct(5, 2304);
+       stock.buyProduct(4, random.nextInt(50));
+       stock.buyProduct(5, random.nextInt(50));
        stock.buyProduct(6, 901);
        stock.buyProduct(7, 869);
        stock.buyProduct(8, 1102);
@@ -118,8 +120,10 @@ public class StockDemo
     */
    private void findProductname()
    {
+       System.out.print("Name search List");
+       System.out.println();
+       stock.findName("Cure Minor");
        stock.findName("Cure Alls");
-       stock.findName("Tulaclion Remedy");
    }
    
    private void checkProductamount()
