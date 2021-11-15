@@ -1,27 +1,45 @@
-Product elitherdraught = new Product(101, "Elither Draught");
-elitherdraught.print();
- ID 101: Elither Draught stock level: 0
-elitherdraught.decreaseQuantity(1);
-elitherdraught.print();
- ID 101: Elither Draught stock level: 0
-elitherdraught.increaseQuantity(1);
-elitherdraught.print();
- ID 101: Elither Draught stock level: 1
-elitherdraught.decreaseQuantity(1);
-elitherdraught.print();
- ID 101: Elither Draught stock level: 0
-elitherdraught.decreaseQuantity(1);
-elitherdraught.print();
- ID 101: Elither Draught stock level: 0
-Product spells = new Product(102, "1001 Spells for Dummies");
 StockList stockLis1 = new StockList();
-stockLis1.add(elitherdraught);
-stockLis1.add(spells);
+Product product1 = new Product(1, "Elither Draught ");
+stockLis1.add(product1);
+product1.setQuantity(50);
 stockLis1.print();
 
  Conor's Stock List
  ====================
 
- ID 101: Elither Draught stock level: 0
- ID 102: 1001 Spells for Dummies stock level: 0
+ ID 1: Elither Draught  stock level: 50
+
+product1.decreaseQuantity(5);
+stockLis1.print();
+
+ Conor's Stock List
+ ====================
+
+ ID 1: Elither Draught  stock level: 45
+
+product1.increaseQuantity(10);
+stockLis1.print();
+
+ Conor's Stock List
+ ====================
+
+ ID 1: Elither Draught  stock level: 55
+
+product1.decreaseQuantity(5);
+stockLis1.print();
+
+ Conor's Stock List
+ ====================
+
+ ID 1: Elither Draught  stock level: 50
+
+Product product2 = new Product(2, "1001 spells for Dummies");
+stockLis1.add(product2);
+stockLis1.print();
+
+ Conor's Stock List
+ ====================
+
+ ID 1: Elither Draught  stock level: 50
+ ID 2: 1001 spells for Dummies stock level: 0
 
