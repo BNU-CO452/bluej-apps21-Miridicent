@@ -67,6 +67,9 @@ public class StockDemo
        stock.print();
        
        checkProductamount();
+       stock.print();
+       
+       restockProductamount();
        
     }
     
@@ -126,9 +129,21 @@ public class StockDemo
        stock.findName("Cure Alls");
    }
    
+   /**
+    * checks to see if a product stock is low and warns the user if it is
+    */
    private void checkProductamount()
    {
-       stock.checkProduct(1);
-       
+       stock.checkProduct(1);     
+   }
+   
+   /**
+    * will automatically restock the products if they are to low 
+    */
+   private void restockProductamount()
+   {
+       System.out.println("Stock has been replenished");
+       System.out.println("");
+       stock.restockProduct(1, 1000); 
    }
 }

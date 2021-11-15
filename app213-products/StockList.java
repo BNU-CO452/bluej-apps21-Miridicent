@@ -11,8 +11,8 @@ public class StockList
 {
     // A list of the products.
     public ArrayList<Product> stock;
-     
-
+    
+    
     /**
      * Initialise the stock manager.
      */
@@ -124,6 +124,21 @@ public class StockList
         }
         return null;
     }   
+    
+    /**
+     * automatically restocks a product if it gets to low 
+     */
+    public Product restockProduct(int productID, int amount)
+    {
+       for(Product product : stock)
+       {
+         if(product.getQuantity() <= 50)
+         product.increaseQuantity(amount);
+         System.out.println(product);
+       }
+     
+       return null;
+    }
     
     /**
      * A method to sell a single quantity of the product
