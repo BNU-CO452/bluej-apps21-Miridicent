@@ -130,12 +130,12 @@ public class StockList
      */
     public Product restockProduct(int productID, int amount)
     {
-       for(Product product : stock)
-       {
-         if(product.getQuantity() <= 50)
-         product.increaseQuantity(amount);
-         System.out.println(product);
-       }
+        for(Product product : stock)
+        {
+          if(product.getQuantity() <= 50)
+          product.increaseQuantity(amount);
+          System.out.println(product);
+        }
      
        return null;
     }
