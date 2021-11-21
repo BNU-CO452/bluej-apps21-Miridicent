@@ -58,6 +58,11 @@ public class StockApp
             stock.add(product);
             System.out.println("Product " + product.getID() + ", " + product.getName() + " has been added ");
         }
+        else if (choice.equals("remove"))
+        {
+            int id = reader.getInt("please enter the ID of the product you wish removed");
+            
+        }
         else if(choice.equals("print"))
         {
             stock.print();
@@ -89,4 +94,5 @@ public class StockApp
         System.out.println("      by Conor Briggs");
         System.out.println("********************************");
     }
+    
 }
