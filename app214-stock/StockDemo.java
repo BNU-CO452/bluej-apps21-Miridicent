@@ -22,7 +22,7 @@ public class StockDemo
     public StockDemo() 
     {
        this.stock = new StockList();
-    this.random = new Random();
+       this.random = new Random();
        // Add at least 10 products, they must be unique to you
        // Make sure the ids are sequential numbers
         
@@ -125,8 +125,8 @@ public class StockDemo
    {
        System.out.print("Name search List");
        System.out.println();
-       stock.findName("Cure Minor");
-       stock.findName("Cure Alls");
+       stock.findName("Cure");
+       
    }
    
    /**

@@ -1,10 +1,10 @@
-
+import java.util.ArrayList;
 /**
  * This app provides a user interface to the
  * stock manager so that users can add, edit,
  * print and remove stock products
  *
- * @author Student Name
+ * @author Conor Briggs
  * @version 0.1
  */
 public class StockApp
@@ -54,15 +54,38 @@ public class StockApp
         {
             int id = reader.getInt("please enter the ID:");
             String name = reader.getString("please enter the name");
-            Product product = new Product(id, name);
-            stock.add(product);
-            System.out.println("Product " + product.getID() + ", " + product.getName() + " has been added ");
+            if(stock.findProduct(id) == null)
+            {
+                Product product = new Product(id, name);
+                stock.add(product);
+                System.out.println("Product " + product.getID() + ", " + product.getName() + " has been added ");
+            }
+            else if (stock.findProduct(id) != null)
+            {
+                System.out.println("There is already a product with that ID");
+            }
+            else 
+            {
+                System.out.println("Error, please try again");
+            }
         }
         else if (choice.equals("remove"))
         {
-            int id = reader.getInt("please enter the ID of the product you wish removed");
-            
-        }
+            int rid = reader.getInt("please enter the ID of the product you wish removed");
+            if(stock.findProduct(rid) != null)
+            {
+                stock.removeProduct(rid);
+                System.out.println("product has been removed");
+            }
+            else if (stock.findProduct(rid) == null)
+            {
+                System.out.println("There isn't a product with that ID");  
+            }
+            else 
+            {
+                System.out.println("Error, please try again");
+            }
+        }   
         else if(choice.equals("print"))
         {
             stock.print();
