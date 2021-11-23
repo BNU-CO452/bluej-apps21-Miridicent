@@ -94,7 +94,6 @@ public class StockApp
             if(stock.findProduct(rid) != null) 
             {
                 stock.buyProduct(rid, amount);
-                System.out.println(amount + "has been purchased");
             }
             else if(stock.findProduct(rid) == null)
             {
@@ -108,7 +107,6 @@ public class StockApp
             if(stock.findProduct(rid) != null) 
             {
                 stock.sellProduct(rid, amount);
-                System.out.println(amount + "has been purchased");
             }
             else if(stock.findProduct(rid) == null)
             {
@@ -117,15 +115,25 @@ public class StockApp
         }
         else if(choice.equals("search"))
         {
-            String name = reader.getString("What product do you want to find?");
-            if(stock.findName(name) != null)
+            String keyword = reader.getString("What product do you want to find?");
+            if(stock.findName(keyword) != null)
             {
-                stock.findName(name);
+                System.out.print(stock.findName(keyword));
             }
-            else if(stock.findName(name) == null)
+            else if(stock.findName(keyword) == null)
             {
                 System.out.println("There are no products with that name");
             }
+        }
+        else if(choice.equals("check"))
+        {
+            int cid = reader.getInt("input the ID of the product you would like to check");
+            stock.checkProduct(cid);
+        }
+        else if(choice.equals("restock"))
+        {
+            int rsid = reader.getInt("input the ID of the product you would like to check");
+            stock.restockProduct(rsid, 1000);
         }
         else if(choice.equals("print"))
         {
@@ -147,6 +155,8 @@ public class StockApp
         System.out.println("    Buy         Buy an amount of a product");
         System.out.println("    Sell        Sell an amount of a product");
         System.out.println("    Search      Search for a product");
+        System.out.println("    Check       Checks stock level");
+        System.out.println("    Restock     Restocks product if the quantity is low");
         System.out.println("    Quit:       Quit the program");
         System.out.println();        
     }

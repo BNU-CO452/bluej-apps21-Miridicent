@@ -79,8 +79,7 @@ public class StockList
         for(Product product : stock)
         {
             if(product.getID() == productID)
-                return product;
-                
+                return product;   
         }
         return null;
     }
@@ -89,11 +88,25 @@ public class StockList
      * Finds products based on name 
      * if not found return null
      */
-    public Product findName(String productName)
+    public Product findName(String keyword)
     {
         for(Product product : stock)
         {
-            if(product.getName().contains(productName));
+            if(product.getName().contains(keyword));
+            return product;
+        }
+        return null;
+    }
+    
+    /**
+     * Finds products based on name and prints
+     * if not found return null
+     */
+    public Product findNamep(String keyword)
+    {
+        for(Product product : stock)
+        {
+            if(product.getName().contains(keyword));
             System.out.println(product);
         }
         return null;
