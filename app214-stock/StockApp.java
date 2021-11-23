@@ -13,7 +13,6 @@ public class StockApp
     
     private StockList stock;
     
-    
     /**
      * Constructor for objects of class StockApp
      */
@@ -116,11 +115,12 @@ public class StockApp
         else if(choice.equals("search"))
         {
             String keyword = reader.getString("What product do you want to find?");
-            if(stock.findName(keyword) != null)
+            Product product = stock.findName(keyword);
+            if(product != null)
             {
-                System.out.print(stock.findName(keyword));
+                System.out.println(product);
             }
-            else if(stock.findName(keyword) == null)
+            else
             {
                 System.out.println("There are no products with that name");
             }

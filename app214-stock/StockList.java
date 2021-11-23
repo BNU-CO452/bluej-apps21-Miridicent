@@ -92,7 +92,7 @@ public class StockList
     {
         for(Product product : stock)
         {
-            if(product.getName().contains(keyword));
+            if(product.getName().contains(keyword))
             return product;
         }
         return null;
