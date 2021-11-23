@@ -84,8 +84,49 @@ public class StockApp
             else 
             {
                 System.out.println("Error, please try again");
+        
             }
         }   
+        else if(choice.equals("buy"))
+        {
+            int rid = reader.getInt("please enter the ID of the product you wish purchase");
+            int amount = reader.getInt("how much would you like to buy?");
+            if(stock.findProduct(rid) != null) 
+            {
+                stock.buyProduct(rid, amount);
+                System.out.println(amount + "has been purchased");
+            }
+            else if(stock.findProduct(rid) == null)
+            {
+                System.out.println("There isn't a product with that ID");
+            }
+        }
+        else if(choice.equals("sell"))
+        {
+            int rid = reader.getInt("please enter the ID of the product you wish sell");
+            int amount = reader.getInt("how much would you like to sell?");
+            if(stock.findProduct(rid) != null) 
+            {
+                stock.sellProduct(rid, amount);
+                System.out.println(amount + "has been purchased");
+            }
+            else if(stock.findProduct(rid) == null)
+            {
+                System.out.println("There isn't a product with that ID");
+            }
+        }
+        else if(choice.equals("search"))
+        {
+            String name = reader.getString("What product do you want to find?");
+            if(stock.findName(name) != null)
+            {
+                stock.findName(name);
+            }
+            else if(stock.findName(name) == null)
+            {
+                System.out.println("There are no products with that name");
+            }
+        }
         else if(choice.equals("print"))
         {
             stock.print();
@@ -103,6 +144,9 @@ public class StockApp
         System.out.println("    Add:        Add a new product");
         System.out.println("    Remove:     Remove an old product");
         System.out.println("    Print:      Print all products");
+        System.out.println("    Buy         Buy an amount of a product");
+        System.out.println("    Sell        Sell an amount of a product");
+        System.out.println("    Search      Search for a product");
         System.out.println("    Quit:       Quit the program");
         System.out.println();        
     }
