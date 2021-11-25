@@ -1,0 +1,144 @@
+quit
+Program.main({ });
+********************************
+  App21-04: Stock Application 
+      by Conor Briggs
+********************************
+
+    Add:        Add a new product
+    Remove:     Remove an old product
+    Print:      Print all products
+    Buy         Buy an amount of a product
+    Sell        Sell an amount of a product
+    Search      Search for a product
+    Check       Checks stock level
+    Restock     Restocks product if the quantity is low
+    Quit:       Quit the program
+
+Please enter your choice > print
+
+ Conor's Stock List
+ ====================
+
+ ID 1: Elisans Draught stock level: 0
+ ID 2: 1001 Spells for Dummies stock level: 0
+ ID 3: Stun Orb stock level: 0
+ ID 4: Mana Locator stock level: 0
+ ID 5: Cure Minor stock level: 0
+ ID 6: Cure Alls stock level: 0
+ ID 7: Arcantus Venom stock level: 0
+ ID 8: Guide to Elemental Manipulation stock level: 0
+ ID 9: Tulaclion Remedy stock level: 0
+ ID 10: Kitsune Repellent stock level: 0
+
+********************************
+  App21-04: Stock Application 
+      by Conor Briggs
+********************************
+
+    Add:        Add a new product
+    Remove:     Remove an old product
+    Print:      Print all products
+    Buy         Buy an amount of a product
+    Sell        Sell an amount of a product
+    Search      Search for a product
+    Check       Checks stock level
+    Restock     Restocks product if the quantity is low
+    Quit:       Quit the program
+
+Please enter your choice > quit
+Program.main({ });
+********************************
+  App21-04: Stock Application 
+      by Conor Briggs
+********************************
+
+    Add:        Add a new product
+    Remove:     Remove an old product
+    Print:      Print all products
+    Buy         Buy an amount of a product
+    Sell        Sell an amount of a product
+    Search      Search for a product
+    Check       Checks stock level
+    Restock     Restocks product if the quantity is low
+    Quit:       Quit the program
+
+Please enter your choice > add
+please enter the ID:
+11
+please enter the nameStuff
+Product 11, Stuff has been added 
+********************************
+  App21-04: Stock Application 
+      by Conor Briggs
+********************************
+
+    Add:        Add a new product
+    Remove:     Remove an old product
+    Print:      Print all products
+    Buy         Buy an amount of a product
+    Sell        Sell an amount of a product
+    Search      Search for a product
+    Check       Checks stock level
+    Restock     Restocks product if the quantity is low
+    Quit:       Quit the program
+
+Please enter your choice > add
+please enter the ID:
+1
+please enter the namestu
+There is already a product with that ID
+********************************
+  App21-04: Stock Application 
+      by Conor Briggs
+********************************
+
+    Add:        Add a new product
+    Remove:     Remove an old product
+    Print:      Print all products
+    Buy         Buy an amount of a product
+    Sell        Sell an amount of a product
+    Search      Search for a product
+    Check       Checks stock level
+    Restock     Restocks product if the quantity is low
+    Quit:       Quit the program
+
+Please enter your choice > remove
+please enter the ID of the product you wish removed
+11
+product has been removed
+********************************
+  App21-04: Stock Application 
+      by Conor Briggs
+********************************
+
+    Add:        Add a new product
+    Remove:     Remove an old product
+    Print:      Print all products
+    Buy         Buy an amount of a product
+    Sell        Sell an amount of a product
+    Search      Search for a product
+    Check       Checks stock level
+    Restock     Restocks product if the quantity is low
+    Quit:       Quit the program
+
+Please enter your choice > remove
+please enter the ID of the product you wish removed
+11
+There isn't a product with that ID
+********************************
+  App21-04: Stock Application 
+      by Conor Briggs
+********************************
+
+    Add:        Add a new product
+    Remove:     Remove an old product
+    Print:      Print all products
+    Buy         Buy an amount of a product
+    Sell        Sell an amount of a product
+    Search      Search for a product
+    Check       Checks stock level
+    Restock     Restocks product if the quantity is low
+    Quit:       Quit the program
+
+Please enter your choice > 

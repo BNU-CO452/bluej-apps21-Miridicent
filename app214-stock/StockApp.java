@@ -13,14 +13,28 @@ public class StockApp
     
     private StockList stock;
     
+    private int ID;
+    
     /**
      * Constructor for objects of class StockApp
      */
     public StockApp()
     {
+        this.ID = ID;
         reader = new InputReader();
         
         stock = new StockList();
+        
+        stock.add(new Product(1, "Elisans Draught"));
+        stock.add(new Product(2, "1001 Spells for Dummies"));
+        stock.add(new Product(3, "Stun Orb"));
+        stock.add(new Product(4, "Mana Locator"));
+        stock.add(new Product(5, "Cure Minor"));
+        stock.add(new Product(6, "Cure Alls"));
+        stock.add(new Product(7, "Arcantus Venom"));
+        stock.add(new Product(8, "Guide to Elemental Manipulation"));
+        stock.add(new Product(9, "Tulaclion Remedy"));
+        stock.add(new Product(10, "Kitsune Repellent"));
         //StockDemo demo = new StockDemo(stock);
     }
 
@@ -127,13 +141,11 @@ public class StockApp
         }
         else if(choice.equals("check"))
         {
-            int cid = reader.getInt("input the ID of the product you would like to check");
-            stock.checkProduct(cid);
+             stock.checkProduct(ID);
         }
         else if(choice.equals("restock"))
         {
-            int rsid = reader.getInt("input the ID of the product you would like to check");
-            stock.restockProduct(rsid, 1000);
+            stock.restockProduct(ID, 1000);
         }
         else if(choice.equals("print"))
         {

@@ -1,0 +1,161 @@
+Program.main({ });
+********************************
+  App21-04: Stock Application 
+      by Conor Briggs
+********************************
+
+    Add:        Add a new product
+    Remove:     Remove an old product
+    Print:      Print all products
+    Buy         Buy an amount of a product
+    Sell        Sell an amount of a product
+    Search      Search for a product
+    Check       Checks stock level
+    Restock     Restocks product if the quantity is low
+    Quit:       Quit the program
+
+Please enter your choice > buy
+please enter the ID of the product you wish purchase
+1
+how much would you like to buy?
+10
+Bought 10 of Elisans Draught
+********************************
+  App21-04: Stock Application 
+      by Conor Briggs
+********************************
+
+    Add:        Add a new product
+    Remove:     Remove an old product
+    Print:      Print all products
+    Buy         Buy an amount of a product
+    Sell        Sell an amount of a product
+    Search      Search for a product
+    Check       Checks stock level
+    Restock     Restocks product if the quantity is low
+    Quit:       Quit the program
+
+Please enter your choice > sell
+please enter the ID of the product you wish sell
+1
+how much would you like to sell?
+5
+Sold 5 of Elisans Draught
+********************************
+  App21-04: Stock Application 
+      by Conor Briggs
+********************************
+
+    Add:        Add a new product
+    Remove:     Remove an old product
+    Print:      Print all products
+    Buy         Buy an amount of a product
+    Sell        Sell an amount of a product
+    Search      Search for a product
+    Check       Checks stock level
+    Restock     Restocks product if the quantity is low
+    Quit:       Quit the program
+
+Please enter your choice > search 
+********************************
+  App21-04: Stock Application 
+      by Conor Briggs
+********************************
+
+    Add:        Add a new product
+    Remove:     Remove an old product
+    Print:      Print all products
+    Buy         Buy an amount of a product
+    Sell        Sell an amount of a product
+    Search      Search for a product
+    Check       Checks stock level
+    Restock     Restocks product if the quantity is low
+    Quit:       Quit the program
+
+Please enter your choice > search
+What product do you want to find?1001
+ ID 2: 1001 Spells for Dummies stock level: 0
+********************************
+  App21-04: Stock Application 
+      by Conor Briggs
+********************************
+
+    Add:        Add a new product
+    Remove:     Remove an old product
+    Print:      Print all products
+    Buy         Buy an amount of a product
+    Sell        Sell an amount of a product
+    Search      Search for a product
+    Check       Checks stock level
+    Restock     Restocks product if the quantity is low
+    Quit:       Quit the program
+
+Please enter your choice > check
+ ID 1: Elisans Draught stock level: 5 stock is getting low
+ ID 2: 1001 Spells for Dummies stock level: 0 stock is getting low
+ ID 3: Stun Orb stock level: 0 stock is getting low
+ ID 4: Mana Locator stock level: 0 stock is getting low
+ ID 5: Cure Minor stock level: 0 stock is getting low
+ ID 6: Cure Alls stock level: 0 stock is getting low
+ ID 7: Arcantus Venom stock level: 0 stock is getting low
+ ID 8: Guide to Elemental Manipulation stock level: 0 stock is getting low
+ ID 9: Tulaclion Remedy stock level: 0 stock is getting low
+ ID 10: Kitsune Repellent stock level: 0 stock is getting low
+********************************
+  App21-04: Stock Application 
+      by Conor Briggs
+********************************
+
+    Add:        Add a new product
+    Remove:     Remove an old product
+    Print:      Print all products
+    Buy         Buy an amount of a product
+    Sell        Sell an amount of a product
+    Search      Search for a product
+    Check       Checks stock level
+    Restock     Restocks product if the quantity is low
+    Quit:       Quit the program
+
+Please enter your choice > restock
+ ID 1: Elisans Draught stock level: 1005
+ ID 2: 1001 Spells for Dummies stock level: 1000
+ ID 3: Stun Orb stock level: 1000
+ ID 4: Mana Locator stock level: 1000
+ ID 5: Cure Minor stock level: 1000
+ ID 6: Cure Alls stock level: 1000
+ ID 7: Arcantus Venom stock level: 1000
+ ID 8: Guide to Elemental Manipulation stock level: 1000
+ ID 9: Tulaclion Remedy stock level: 1000
+ ID 10: Kitsune Repellent stock level: 1000
+********************************
+  App21-04: Stock Application 
+      by Conor Briggs
+********************************
+
+    Add:        Add a new product
+    Remove:     Remove an old product
+    Print:      Print all products
+    Buy         Buy an amount of a product
+    Sell        Sell an amount of a product
+    Search      Search for a product
+    Check       Checks stock level
+    Restock     Restocks product if the quantity is low
+    Quit:       Quit the program
+
+Please enter your choice > check
+********************************
+  App21-04: Stock Application 
+      by Conor Briggs
+********************************
+
+    Add:        Add a new product
+    Remove:     Remove an old product
+    Print:      Print all products
+    Buy         Buy an amount of a product
+    Sell        Sell an amount of a product
+    Search      Search for a product
+    Check       Checks stock level
+    Restock     Restocks product if the quantity is low
+    Quit:       Quit the program
+
+Please enter your choice > 
