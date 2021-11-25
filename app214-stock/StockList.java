@@ -67,7 +67,7 @@ public class StockList
         {
                 System.out.println ("Couldn't find product");
 
-     }
+        }
     }
     
     /**
@@ -150,7 +150,7 @@ public class StockList
           System.out.println(product);
         }
      
-       return null;
+        return null;
     }
     
     /**

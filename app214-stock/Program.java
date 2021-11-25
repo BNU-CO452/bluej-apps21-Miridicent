@@ -1,6 +1,6 @@
 
 /**
- * Write a description of class Program here.
+ * This the main, will run the program when called 
  *
  * @author (Conor Briggs)
  * @version (22/11/2021)

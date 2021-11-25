@@ -57,12 +57,17 @@ public class StockApp
         }
     }
     
+    /**
+     * This will execute a spesific function when a keyword is inputted into the terminal
+     */
     private boolean executeChoice(String choice)
     {
+        // exits the program
         if(choice.equals("quit"))
         {
             return true;
         }
+        // Allows the user to add a product
         else if(choice.equals("add"))
         {
             int id = reader.getInt("please enter the ID:");
@@ -82,6 +87,7 @@ public class StockApp
                 System.out.println("Error, please try again");
             }
         }
+        //allows the user to remove a product from the list
         else if (choice.equals("remove"))
         {
             int rid = reader.getInt("please enter the ID of the product you wish removed");
@@ -99,7 +105,8 @@ public class StockApp
                 System.out.println("Error, please try again");
         
             }
-        }   
+        } 
+        // allows the user to buy an amount of a product
         else if(choice.equals("buy"))
         {
             int rid = reader.getInt("please enter the ID of the product you wish purchase");
@@ -113,6 +120,7 @@ public class StockApp
                 System.out.println("There isn't a product with that ID");
             }
         }
+        // allows the user to sell an amount of a product
         else if(choice.equals("sell"))
         {
             int rid = reader.getInt("please enter the ID of the product you wish sell");
@@ -126,6 +134,7 @@ public class StockApp
                 System.out.println("There isn't a product with that ID");
             }
         }
+        // allows the user to search if a spesific item is in the list
         else if(choice.equals("search"))
         {
             String keyword = reader.getString("What product do you want to find?");
@@ -139,14 +148,17 @@ public class StockApp
                 System.out.println("There are no products with that name");
             }
         }
+        // checks if any products are low
         else if(choice.equals("check"))
         {
              stock.checkProduct(ID);
         }
+        // restocks products if low
         else if(choice.equals("restock"))
         {
             stock.restockProduct(ID, 1000);
         }
+        // Prints the list of products 
         else if(choice.equals("print"))
         {
             stock.print();
