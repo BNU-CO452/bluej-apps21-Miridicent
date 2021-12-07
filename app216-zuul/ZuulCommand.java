@@ -17,6 +17,7 @@
  * on the classic Coomand design pattern
  * 
  * Derek Peacock & Nicholas Day
+ * Modified by Conor Briggs
  * @version 2021-08-23
  */
 public abstract class ZuulCommand

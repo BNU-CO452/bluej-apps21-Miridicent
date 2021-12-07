@@ -9,6 +9,7 @@
  *          [Computer Lab]<---->[Office]
  *             
  * @author Derek Peacock and Nicholas Day
+ * Modified by Conor Briggs
  * @version 2021-08-22
  */
 public class Map

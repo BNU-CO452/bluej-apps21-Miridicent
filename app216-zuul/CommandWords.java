@@ -4,6 +4,7 @@
  * for the game of Zuul
  *
  * @author Derek Peacock & Nicholas Day
+ * Modified by Conor Briggs
  * @version 25-08-2021
  */
 public enum CommandWords

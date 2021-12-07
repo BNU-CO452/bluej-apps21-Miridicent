@@ -5,6 +5,7 @@
  * two locations are linked by a valid exit
  *
  * @author Derek Peacock & Nicholas Day
+ * Modified by Conor Briggs
  * @version 2021-08-23
  */
 public class GoCommand extends ZuulCommand

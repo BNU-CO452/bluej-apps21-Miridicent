@@ -14,6 +14,7 @@ import java.util.ArrayList;
  * returns a command object that is marked as an unknown command.
  * 
  * @author  Michael Kölling and David J. Barnes
+ * Modified by Conor Briggs
  * @version 2016.02.29
  */
 public class CommandReader 
