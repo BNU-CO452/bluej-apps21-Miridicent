@@ -30,6 +30,7 @@ public class Game
     {
         MAP = new Map();
         reader = new CommandReader(this);
+        play();
     }
 
     /**

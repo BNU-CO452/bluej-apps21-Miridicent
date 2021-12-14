@@ -28,7 +28,7 @@ public class Map
     public Map()
     {
         createLocations();
-        dispell = 0;
+        this.dispell = 0;
     }
 
     /**
@@ -50,7 +50,7 @@ public class Map
         createStairs();
         createCentre();
 
-        currentLocation = entrance;  // start game outside
+        currentLocation = entrance;  // start game entrance
     }
     
     /**
@@ -61,7 +61,6 @@ public class Map
     {
         entrance = new Location("You stand in the entrance,The walls are cracked and the floor is withering away and the sound of battle rages outside the ironclad doors, something isn't right here. To the east there appeaes to be some kind of large chamber");
         
-        entrance.setExit("east", chamber);
     }
     
     /**
@@ -71,9 +70,9 @@ public class Map
     {
         chamber = new Location("The chamber is large and derelict, clearly someone hasn't been keeping the place clean. to the north and south are equally decrepit hallways, to the east is a large door with suspicious looking runes placed on it ");
         
-        chamber.setExit("north", hallwayone);
-        chamber.setExit("south", hallwaytwo);
-        if (dispell == 4)
+        entrance.setExit("east", chamber);
+        chamber.setExit("west", entrance);
+        if (dispell == 4) 
         {
             chamber.setExit("east", stairs);
         }
@@ -88,10 +87,10 @@ public class Map
      */
     private void createHallwayone()
     {
-        hallwayone = new Location("in a lecture theater");
+        hallwayone = new Location("A decrepit hallway meets you. to the west is a room full of books and paper, to the east is what appears to be a lab of some sort");
         
-        hallwayone.setExit("west", study);
-        hallwayone.setExit("east", magiclab);
+        chamber.setExit("north", hallwayone);
+        hallwayone.setExit("south", chamber);
     }
     
     /**
@@ -99,10 +98,10 @@ public class Map
      */
     private void createHallwaytwo()
     {
-        hallwaytwo = new Location("in the computing admin office");
+        hallwaytwo = new Location("The hallway is old and cracked, to the west there seems to be a white room full cooking tools, to the east a long table with over a dozen chairs");
         
-        hallwaytwo.setExit("west", kitchen);
-        hallwaytwo.setExit("east", dining);
+        hallwaytwo.setExit("north", chamber);
+        chamber.setExit("south", hallwaytwo);
     }
     
     /**
@@ -111,8 +110,9 @@ public class Map
     private void createStudy()
     {
         // create the Locations
-        study = new Location("in a computing lab");
+        study = new Location("books and paper are scattered all over the floor and the book shelves look like there about to collapse, this study hasn't been used in a long time");
         
+        hallwayone.setExit("west", study);
         study.setExit("east", hallwayone);
     }
     
@@ -122,8 +122,9 @@ public class Map
     private void createMagiclab()
     {
         // create the Locations
-        magiclab = new Location("in a computing lab");
+        magiclab = new Location("Vials of bizarre looking mixtures line the table as well a burners, beakers and a complex looking book about the lifecycle of the rascetseen (Whatever that is)");
         
+        hallwayone.setExit("east", magiclab);
         magiclab.setExit("west", hallwayone);
     }
     
@@ -133,8 +134,9 @@ public class Map
     private void createKitchen()
     {
         // create the Locations
-        kitchen = new Location("in a computing lab");
+        kitchen = new Location("The kitchen despite being old is surprisingly normal compared to a lot of the castle, it's walls are lined with ovens stoves and some strage box contraption labled as a Microwave");
         
+        hallwaytwo.setExit("west", kitchen);
         kitchen.setExit("east", hallwaytwo);
     }
     
@@ -144,8 +146,9 @@ public class Map
     private void createDining()
     {
         // create the Locations
-        dining = new Location("in a computing lab");
+        dining = new Location("The dining table present here looks as if it could hold a small army of people and yet it stands quite empty now");
         
+        hallwaytwo.setExit("east", dining);
         dining.setExit("west", hallwaytwo);
     }
     
@@ -155,9 +158,8 @@ public class Map
     private void createStairs()
     {
         // create the Locations
-        stairs = new Location("in a computing lab");
+        stairs = new Location("The staircase spirals downwards in to an inky black abyss, who knows what horrors lurk in the depths (you haven't seen any monsters yet but who knows)");
         
-        stairs.setExit("east", centre);
     }
     
     /**
@@ -166,8 +168,9 @@ public class Map
     private void createCentre()
     {
         // create the Locations
-        centre = new Location("in a computing lab");
+        centre = new Location("a strangly familier figure stands at the centre of a large swirling room look at battle taking place outside the walls of the castle");
         
+        stairs.setExit("east", centre);
     }
     
     public Location getCurrentLocation()
