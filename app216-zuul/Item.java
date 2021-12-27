@@ -8,14 +8,14 @@
 public class Item
 {
     // instance variables - replace the example below with your own
-    private int id;
-    private String name;
-    private String description;
-
+    public int id;
+    public String name;
+    public String description;
+    
     /**
      * Constructor for objects of class Item
      */
-    public Item()
+    public Item(String name, String description, int id)
     {
         // initialise instance variables
         this.id = id;
@@ -29,21 +29,20 @@ public class Item
      * @param  y  a sample parameter for a method
      * @return    the sum of x and y
      */
-    public String getName()
+    public void getShortDes()
     {
         System.out.println(name);
-        return name;
+        
     }
     
-    public String getDescription(int id)
+    public String getLongDes()
     {
-        System.out.println(description);
+        System.out.println(name + " " + description);
         return description;
     }
     
-    public int getID()
+    public String getName()
     {
-        System.out.println(id);
-        return id;
+        return name;
     }
 }

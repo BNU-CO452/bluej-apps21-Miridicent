@@ -61,6 +61,8 @@ public class Map
     {
         entrance = new Location("You stand in the entrance,The walls are cracked and the floor is withering away and the sound of battle rages outside the ironclad doors, something isn't right here. To the east there appeaes to be some kind of large chamber");
         
+        
+        entrance.setItem(new Item("ChamberKey", "an old rusty key" , 101));
     }
     
     /**
@@ -112,6 +114,7 @@ public class Map
         // create the Locations
         study = new Location("books and paper are scattered all over the floor and the book shelves look like there about to collapse, this study hasn't been used in a long time");
         
+        study.setItem(new Item("Notebook", "A compleatly full note book", 102));
         hallwayone.setExit("west", study);
         study.setExit("east", hallwayone);
     }
