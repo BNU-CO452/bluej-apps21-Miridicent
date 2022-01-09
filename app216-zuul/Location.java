@@ -46,6 +46,9 @@ public class Location
         exits.put(direction, neighbor);
     }
     
+    /**
+     * Creates "Items" which can be picked up
+     */
     public void setItem(Item item)
     {
         this.item = item;            
@@ -86,13 +89,14 @@ public class Location
         }
         return returnString;
     }
+    
     private String getItemString()
     {
         if (item != null)
         {   
-        String returnString = "items: ";
-        returnString += " " + item.getName() + " ";
-        return returnString;
+            String returnString = "items: ";
+            returnString += " " + item.getName() + " ";
+            return returnString;
         }
         return " ";
     }

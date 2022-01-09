@@ -78,10 +78,6 @@ public class Map
         {
             chamber.setExit("east", stairs);
         }
-        else
-        {
-            System.out.println("The magic on the door blocks you from opening it, you won't be getting in there without dispelling it first");
-        }
     }
     
     /**
