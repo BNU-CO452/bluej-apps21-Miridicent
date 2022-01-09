@@ -19,8 +19,8 @@ public class HelpCommand extends ZuulCommand
      */
     public void execute()
     {
-        System.out.println(" You are lost. You are alone. You wander");
-        System.out.println(" around at the university.");        
+        System.out.println(" A vision fills your mind");
+        System.out.println(" they reveal secrets and truths of the world.");        
         System.out.println();
         System.out.println(" Your command words are:");
         System.out.println();
