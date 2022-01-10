@@ -59,9 +59,9 @@ public class Map
      */
     private void createEntrance()
     {
-        entrance = new Location("You stand in the entrance,The walls are cracked and the floor is withering away and the sound of battle rages outside the ironclad doors, something isn't right here. To the east there appeaes to be some kind of large chamber");
-        
-        
+        entrance = new Location("You stand in the entrance,something isn't right here.");
+        System.out.println("The walls are cracked and the floor is withering away and the sound of battle rages outside the ironclad doors");
+        System.out.println("To the east there appears to be a large chamber");
         entrance.setItem(new Item("ChamberKey", "an old rusty key" , 101));
     }
     
@@ -70,8 +70,9 @@ public class Map
      */
     private void createChamber()
     {
-        chamber = new Location("The chamber is large and derelict, clearly someone hasn't been keeping the place clean. to the north and south are equally decrepit hallways, to the east is a large door with suspicious looking runes placed on it ");
-        
+        chamber = new Location("The chamber is large and derelict,  to the north and south are equally decrepit hallways,");
+        System.out.println("clearly someone hasn't been keeping the place clean.");
+        System.out.println("to the east is a large door with suspicious looking runes placed on it");
         entrance.setExit("east", chamber);
         chamber.setExit("west", entrance);
         if (dispell == 4) 
