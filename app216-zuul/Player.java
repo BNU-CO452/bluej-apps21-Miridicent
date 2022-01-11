@@ -12,7 +12,8 @@ public class Player
     private int health;
     private int score;
     private int name;
-    public ArrayList<String> Inven;
+    
+    public HashMap<String, Item> inven;
     public int dispell;
     /**
      * Constructor for objects of class Player
@@ -23,8 +24,8 @@ public class Player
         this.health = 5;
         this.score = 0;
         this.name = name;
-        Inven = new ArrayList<String>();
         this.dispell = 0;
+        inven = new HashMap<>();
     }
 
     /**
@@ -59,7 +60,7 @@ public class Player
     
     public void addInv(String item)
     {
-        Inven.add(item);  
+        
     }
     
 }

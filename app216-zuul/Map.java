@@ -76,9 +76,9 @@ public class Map
         System.out.println("to the east is a large door with suspicious looking runes placed on it");
         entrance.setExit("east", chamber);
         chamber.setExit("west", entrance);
-        if (player.dispell == 1) 
+        //if (player.dispell == 1) 
         {
-            chamber.setExit("east", stairs);
+            //chamber.setExit("east", stairs);
         }
     }
     
@@ -87,9 +87,9 @@ public class Map
      */
     private void createHallwayone()
     {
-        hallwayone = new Location("A decrepit hallway meets you.  ");
-        System.out.println("to the west is a room full of books and paper,");
-        System.out.println("to the east is what appears to be a lab of some sort");
+        hallwayone = new Location("A decrepit hallway meets you. \n to the west is a room full of books and paper,\n to the east is what appears to be a lab of some sort  ");
+        
+        
         chamber.setExit("north", hallwayone);
         hallwayone.setExit("south", chamber);
     }
@@ -99,9 +99,9 @@ public class Map
      */
     private void createHallwaytwo()
     {
-        hallwaytwo = new Location("The hallway is old and cracked,");
-        System.out.println("to the west there seems to be a white room full cooking tools,");
-        System.out.println("to the east a long table with over a dozen chairs");
+        hallwaytwo = new Location("The hallway is old and cracked,/n to the west there seems to be a white room full cooking tools, \n to the east a long table with over a dozen chairs");
+        
+        
         hallwaytwo.setExit("north", chamber);
         chamber.setExit("south", hallwaytwo);
     }
@@ -112,9 +112,9 @@ public class Map
     private void createStudy()
     {
         // create the Locations
-        study = new Location("books and paper are scattered all over the floor and the book shelves look like there about to collapse,");
-        System.out.println("this study hasn't been used in a long time");
-    
+        study = new Location("books and paper are scattered all over the floor and the book shelves look like there about to collapse,\n this study hasn't been used in a long time");
+
+           
         study.setItem(new Item("spell 1", "A compleatly full note book, one spell stands out, The first part reads rag-----, the rest is faded", 102));
         hallwayone.setExit("west", study);
         study.setExit("east", hallwayone);
@@ -126,9 +126,9 @@ public class Map
     private void createMagiclab()
     {
         // create the Locations
-        magiclab = new Location("Vials of bizarre looking mixtures line the table as well as burners,");
-        System.out.println("beakers and a complex looking book about the lifecycle of the rascetseen (Whatever that is)");
-        study.setItem(new Item("spell 2", "research papers based around dispelling a spell used to seal doors, the eligible part reads ---na---", 103));
+        magiclab = new Location("Vials of bizarre looking mixtures line the table as well as burners, \n beakers and a complex looking book about the lifecycle of the rascetseen (Whatever that is)");
+        
+        magiclab.setItem(new Item("spell 2", "research papers based around dispelling a spell used to seal doors, the eligible part reads ---na---", 103));
 
         hallwayone.setExit("east", magiclab);
         magiclab.setExit("west", hallwayone);
@@ -140,9 +140,9 @@ public class Map
     private void createKitchen()
     {
         // create the Locations
-        kitchen = new Location("The kitchen despite being old is surprisingly normal compared to a lot of the castle,");
-        System.out.println("it's walls are lined with ovens stoves and some strage box contraption labled as a Microwave");
-        study.setItem(new Item("spell 3", "spell instructions hidden amongst the cook books, The only part you can make out is -----r--", 103));
+        kitchen = new Location("The kitchen despite being old is surprisingly normal compared to a lot of the castle, /n it's walls are lined with ovens stoves and some strage box contraption labled as a Microwave");
+        
+        kitchen.setItem(new Item("spell 3", "spell instructions hidden amongst the cook books, The only part you can make out is -----r--", 103));
 
         hallwaytwo.setExit("west", kitchen);
         kitchen.setExit("east", hallwaytwo);
@@ -156,7 +156,7 @@ public class Map
         // create the Locations
         dining = new Location("The dining table present here looks as if it could hold a small army of people and yet it stands quite empty now");
         
-        study.setItem(new Item("spell 4", "innocent looking book, actually contains spells, one looks more important than the rest, You make out ------ok", 104));
+        dining.setItem(new Item("spell 4", "innocent looking book, actually contains spells, one looks more important than the rest, You make out ------ok", 104));
         hallwaytwo.setExit("east", dining);
         dining.setExit("west", hallwaytwo);
     }
@@ -167,8 +167,8 @@ public class Map
     private void createStairs()
     {
         // create the Locations
-        stairs = new Location("The staircase spirals downwards in to an inky black abyss,");
-        System.out.println("who knows what horrors lurk in the depths (you haven't seen any monsters yet but who knows");
+        stairs = new Location("The staircase spirals downwards in to an inky black abyss, \n who knows what horrors lurk in the depths (you haven't seen any monsters yet but who knows");
+        
     }
     
     /**
