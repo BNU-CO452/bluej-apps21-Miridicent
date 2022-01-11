@@ -13,7 +13,7 @@ public class Player
     private int score;
     private int name;
     public ArrayList<String> Inven;
-
+    public int dispell;
     /**
      * Constructor for objects of class Player
      */
@@ -24,6 +24,7 @@ public class Player
         this.score = 0;
         this.name = name;
         Inven = new ArrayList<String>();
+        this.dispell = 0;
     }
 
     /**

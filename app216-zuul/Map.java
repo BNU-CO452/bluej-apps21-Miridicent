@@ -16,18 +16,19 @@ public class Map
 {
     // Need to add a list of exits
     
-    private Location entrance, chamber, hallwayone, hallwaytwo, study, magiclab, kitchen, dining, stairs, centre;
+    public Location entrance, chamber, hallwayone, hallwaytwo, study, magiclab, kitchen, dining, stairs, centre;
 
-    private Location currentLocation;
+    public Location currentLocation;
     
-    
+    public Player player;
 
     /**
      * Constructor for objects of class Map
      */
-    public Map()
+    public Map(Player player)
     {
         createLocations();
+        this.player = player;
         
     }
 
@@ -75,7 +76,7 @@ public class Map
         System.out.println("to the east is a large door with suspicious looking runes placed on it");
         entrance.setExit("east", chamber);
         chamber.setExit("west", entrance);
-        //if (CastCommand.dispell == 1) 
+        if (player.dispell == 1) 
         {
             chamber.setExit("east", stairs);
         }
@@ -189,5 +190,15 @@ public class Map
     public void enterLocation(Location nextLocation)
     {
         currentLocation = nextLocation;
+    }
+    
+    public void Win()
+    {
+        System.out.println("A purple bolt flys from your fingers killing the man");
+            System.out.println("In the moment the memories of who you are come rushing back");
+            System.out.println("You are the royal wizard, you were sent here in order to stop this man from unleashing a devastating spell on the world");
+            System.out.println("Looks like you will me returning with a heros welcome");
+            System.out.println("");
+            System.out.println("Thanks for playing");
     }
 }

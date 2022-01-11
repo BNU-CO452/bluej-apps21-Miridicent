@@ -78,6 +78,11 @@ public class CommandReader
             HelpCommand help = new HelpCommand(game);
             help.execute();
         }
+        else if(commandWord.equals(CommandWords.CAST.word))
+        {
+            CastCommand cast = new CastCommand(game, word2);
+            cast.execute();
+        }
         else if(commandWord.equals(CommandWords.QUIT.word))
         {
             return true;  // game over
