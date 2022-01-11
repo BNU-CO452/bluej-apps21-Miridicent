@@ -20,7 +20,7 @@ public class Map
 
     private Location currentLocation;
     
-    private int dispell;
+    
 
     /**
      * Constructor for objects of class Map
@@ -28,7 +28,7 @@ public class Map
     public Map()
     {
         createLocations();
-        this.dispell = 0;
+        
     }
 
     /**
@@ -75,7 +75,7 @@ public class Map
         System.out.println("to the east is a large door with suspicious looking runes placed on it");
         entrance.setExit("east", chamber);
         chamber.setExit("west", entrance);
-        if (dispell == 4) 
+        //if (CastCommand.dispell == 1) 
         {
             chamber.setExit("east", stairs);
         }
@@ -114,7 +114,7 @@ public class Map
         study = new Location("books and paper are scattered all over the floor and the book shelves look like there about to collapse,");
         System.out.println("this study hasn't been used in a long time");
     
-        study.setItem(new Item("spell 1", "A compleatly full note book, one spell stands out", 102));
+        study.setItem(new Item("spell 1", "A compleatly full note book, one spell stands out, The first part reads rag-----, the rest is faded", 102));
         hallwayone.setExit("west", study);
         study.setExit("east", hallwayone);
     }
@@ -127,7 +127,7 @@ public class Map
         // create the Locations
         magiclab = new Location("Vials of bizarre looking mixtures line the table as well as burners,");
         System.out.println("beakers and a complex looking book about the lifecycle of the rascetseen (Whatever that is)");
-        study.setItem(new Item("spell 2", "research papers based around deispelling a spell used to seal doors", 103));
+        study.setItem(new Item("spell 2", "research papers based around dispelling a spell used to seal doors, the eligible part reads ---na---", 103));
 
         hallwayone.setExit("east", magiclab);
         magiclab.setExit("west", hallwayone);
@@ -141,7 +141,7 @@ public class Map
         // create the Locations
         kitchen = new Location("The kitchen despite being old is surprisingly normal compared to a lot of the castle,");
         System.out.println("it's walls are lined with ovens stoves and some strage box contraption labled as a Microwave");
-        study.setItem(new Item("spell 3", "spell instructions hidden amongst the cook books", 103));
+        study.setItem(new Item("spell 3", "spell instructions hidden amongst the cook books, The only part you can make out is -----r--", 103));
 
         hallwaytwo.setExit("west", kitchen);
         kitchen.setExit("east", hallwaytwo);
@@ -155,7 +155,7 @@ public class Map
         // create the Locations
         dining = new Location("The dining table present here looks as if it could hold a small army of people and yet it stands quite empty now");
         
-        study.setItem(new Item("spell 4", "innoocent looking book, actually contains spells, one looks more important than the rest", 104));
+        study.setItem(new Item("spell 4", "innocent looking book, actually contains spells, one looks more important than the rest, You make out ------ok", 104));
         hallwaytwo.setExit("east", dining);
         dining.setExit("west", hallwaytwo);
     }

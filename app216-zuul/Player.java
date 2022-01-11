@@ -1,4 +1,5 @@
-
+import java.util.HashMap;
+import java.util.ArrayList;
 /**
  * Write a description of class Player here.
  *
@@ -6,11 +7,12 @@
  * @version (a version number or a date)
  */
 public class Player
-{
+{ 
     // instance variables - replace the example below with your own
     private int health;
     private int score;
-    private int name; 
+    private int name;
+    public ArrayList<String> Inven;
 
     /**
      * Constructor for objects of class Player
@@ -21,6 +23,7 @@ public class Player
         this.health = 5;
         this.score = 0;
         this.name = name;
+        Inven = new ArrayList<String>();
     }
 
     /**
@@ -52,4 +55,10 @@ public class Player
         score = score + 50;
         return score;
     }
+    
+    public void addInv(String item)
+    {
+        Inven.add(item);  
+    }
+    
 }
