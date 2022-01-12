@@ -11,10 +11,11 @@ public class Player
     // instance variables - replace the example below with your own
     private int health;
     private int score;
-    private int name;
-    
-    public HashMap<String, Item> inven;
+    private int mcname;
+    public HashMap<String, String> inven;
+    public Item item;
     public int dispell;
+    public int defeat;
     /**
      * Constructor for objects of class Player
      */
@@ -23,8 +24,9 @@ public class Player
         // initialise instance variables
         this.health = 5;
         this.score = 0;
-        this.name = name;
+        this.mcname = mcname;
         this.dispell = 0;
+        this.item = item;
         inven = new HashMap<>();
     }
 
@@ -58,9 +60,13 @@ public class Player
         return score;
     }
     
-    public void addInv(String item)
+    public void addInv(String name, String description)
     {
-        
+        inven.put(item.name, item.description);    
     }
     
+    public void printInv()
+    {
+        System.out.print(inven);
+    }
 }

@@ -10,7 +10,7 @@ public class CastCommand extends ZuulCommand
     // instance variables - replace the example below with your own
     String spell;
     
-    public int defeat;
+    
     /**
      * Constructor for objects of class CastCommand
      */
@@ -37,7 +37,7 @@ public class CastCommand extends ZuulCommand
         }
         else if(spell == "Nhilo")
         {
-            defeat = 1;
+            //defeat = 1;
             zuul.MAP.Win();
         }
         else if(spell != "Ragnarok" && spell != "Nhilo")

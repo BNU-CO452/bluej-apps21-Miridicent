@@ -83,6 +83,11 @@ public class CommandReader
             CastCommand cast = new CastCommand(game, word2);
             cast.execute();
         }
+        else if(commandWord.equals(CommandWords.MAP.word)) 
+        {
+            MapCommand map = new MapCommand(game);
+            map.execute();
+        }
         else if(commandWord.equals(CommandWords.QUIT.word))
         {
             return true;  // game over

@@ -3,10 +3,11 @@
  * This class is reponsible for creating and
  * linking all the Locations in the game to
  * form a 2D or 3D network
- *
- *  [Pub]<---->[Outside]<---->[Theatre]
- *                 |
- *          [Computer Lab]<---->[Office]
+ *   [Study] <----> [Hallway1] <----> [Magic Lab]
+ *                      |
+ *  [Entrance]<---->[Chamber]<---->[Stairs]
+ *                      |
+ *  [Kitchen]<----> [Hallway 2]<---->[Dining Room]
  *             
  * @author Derek Peacock and Nicholas Day
  * Modified by Conor Briggs

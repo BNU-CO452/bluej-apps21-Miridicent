@@ -13,7 +13,8 @@ public enum CommandWords
     TAKE ("take", "Take <item> from location"),
     HELP ("help", "List all available commands"),
     QUIT ("quit", "End the game"),
-    CAST ("cast", "Cast a spell");
+    CAST ("cast", "Cast a spell"),
+    MAP  ("map", "See the map");
     
     public final String word;
     public final String description;
