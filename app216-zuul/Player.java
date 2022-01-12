@@ -42,29 +42,45 @@ public class Player
         return health;
     }
     
+    /**
+     * get characters name 
+     */
     public void nameCharacter(String name)
     {
         String cha = ("What is your name?");
         cha = name;
     }
     
+    /**
+     * increace score by 10
+     */
     public int smallboost(int score)
     {
         score = score + 10;
         return score;
     }
     
+    /**
+     * increace score by 50
+     */
     public int bigboost(int score)
     {
         score = score + 50;
         return score;
     }
     
+    /**
+     * Add Item to inven
+     */
     public void addInv(String name, String description)
     {
         inven.put(item.name, item.description);    
     }
     
+   
+    /**
+     * Display Inventory
+     */
     public void printInv()
     {
         System.out.print(inven);
