@@ -72,7 +72,7 @@ public class Map
      */
     private void createChamber()
     {
-        chamber = new Location("The chamber is large and derelict,  to the north and south are equally decrepit hallways, \n clearly someone hasn't been keeping the place clean. /n to the east is a large door with suspicious looking runes placed on it");
+        chamber = new Location("The chamber is large and derelict,  to the north and south are equally decrepit hallways, \n clearly someone hasn't been keeping the place clean. \n to the east is a large door with suspicious looking runes placed on it");
         
         entrance.setExit("east", chamber);
         chamber.setExit("west", entrance);
@@ -99,7 +99,7 @@ public class Map
      */
     private void createHallwaytwo()
     {
-        hallwaytwo = new Location("The hallway is old and cracked,/n to the west there seems to be a white room full cooking tools, \n to the east a long table with over a dozen chairs");
+        hallwaytwo = new Location("The hallway is old and cracked,\n to the west there seems to be a white room full cooking tools, \n to the east a long table with over a dozen chairs");
         
         
         hallwaytwo.setExit("north", chamber);
@@ -140,7 +140,7 @@ public class Map
     private void createKitchen()
     {
         // create the Locations
-        kitchen = new Location("The kitchen despite being old is surprisingly normal compared to a lot of the castle, /n it's walls are lined with ovens stoves and some strage box contraption labled as a Microwave");
+        kitchen = new Location("The kitchen despite being old is surprisingly normal compared to a lot of the castle, \n it's walls are lined with ovens stoves and some strage box contraption labled as a Microwave");
         
         kitchen.setItem(new Item("spell 3", "spell instructions hidden amongst the cook books, The only part you can make out is -----r--", 103));
 

@@ -24,6 +24,7 @@ public class Location
     private HashMap<String, Location> exits;        // stores exits of this room.
     private Item item;
     public HashMap<String, Item> items;
+    public TakeCommand takecommand;
     /**
      * Create a location described "description". Initially, it has
      * no exits. "description" is something like "a kitchen" or
@@ -51,7 +52,7 @@ public class Location
      */
     public void setItem(Item item)
     {
-        this.item = item;            
+        this.item = item;
     }
     
     /**
@@ -110,6 +111,18 @@ public class Location
     public Location getExit(String direction) 
     {
         return exits.get(direction);
+    }
+    
+    /**
+     * Finds the item in the Hashmap
+     */
+    public String findItem()
+    {
+        if(items.containsKey(item.getName()))
+        {
+            return item.name; 
+        }
+        return null;
     }
 }
 

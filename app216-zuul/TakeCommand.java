@@ -11,32 +11,33 @@
  */
 public class TakeCommand extends ZuulCommand
 {
-    String take;
+    String get;
     public Item item;
+    public Location location;
     /**
      * Take an item from a location and add it
      * to the player's inventory.
      */
-    public TakeCommand(Game zuul, String take)
+    public TakeCommand(Game zuul, String get)
     {
         super(zuul);
-        this.take = take;
+        this.get = get;
     }    
 
     public void execute()
     {
-        if(take == null) 
+        if(get == null) 
         {
             // if there is no second word, we don't know what to take...
             System.out.println("Take what?");
             return;
         }
-        else if(take != null)
+        else if(get != null)
         {
-            zuul.PLAYER.findItem();
-            if(zuul.PLAYER.findItem().contains(take))
+            location.findItem();
+            if(location.findItem().contains(get))
             {
-                zuul.PLAYER.addInv(item.name, item.description);
+                zuul.PLAYER.addInv(item.name, item.idescription);
                 System.out.print("Item added to Inventory");
             }
             else

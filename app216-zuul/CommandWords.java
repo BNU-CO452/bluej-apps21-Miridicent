@@ -14,7 +14,8 @@ public enum CommandWords
     HELP ("help", "List all available commands"),
     QUIT ("quit", "End the game"),
     CAST ("cast", "Cast a spell"),
-    MAP  ("map", "See the map");
+    MAP  ("map", "See the map"),
+    BAG  ("bag", "See Inventory");
     
     public final String word;
     public final String description;

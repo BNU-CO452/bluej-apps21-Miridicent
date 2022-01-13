@@ -15,7 +15,6 @@ public class Player
     public HashMap<String, String> inven;
     public Item item;
     public Location location;
-    public TakeCommand takecommand;
     public int dispell;
     public int defeat;
     /**
@@ -30,6 +29,7 @@ public class Player
         this.dispell = 0;
         this.item = item;
         inven = new HashMap<>();
+        inven.put("Strange Charm", "You don't remember how you got this");
     }
 
     /**
@@ -76,7 +76,7 @@ public class Player
      */
     public void addInv(String name, String description)
     {
-        inven.put(item.name, item.description);    
+        inven.put(item.name, item.idescription);    
     }
        
     /**
@@ -87,16 +87,4 @@ public class Player
         System.out.print(inven);
     }
     
-    /**
-     * Finds the item in the Hashmap
-     */
-    public String findItem()
-    {
-        
-        if(inven.containsKey(takecommand.take))
-        {
-            return item.name; 
-        }
-        return null;
-    }
 }

@@ -7,7 +7,6 @@
  */
 public class MapCommand extends ZuulCommand
 {
-
     String map;
 
     /**

@@ -88,6 +88,11 @@ public class CommandReader
             MapCommand map = new MapCommand(game);
             map.execute();
         }
+        else if(commandWord.equals(CommandWords.BAG.word))
+        {
+            BagCommand bag = new BagCommand(game);
+            bag.execute();
+        }
         else if(commandWord.equals(CommandWords.QUIT.word))
         {
             return true;  // game over

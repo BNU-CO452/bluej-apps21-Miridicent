@@ -10,7 +10,7 @@ public class Item
     // instance variables - replace the example below with your own
     public int id;
     public String name;
-    public String description;
+    public String idescription;
     
     /**
      * Constructor for objects of class Item
@@ -20,7 +20,7 @@ public class Item
         // initialise instance variables
         this.id = id;
         this.name = name;
-        this.description = description;
+        this.idescription = idescription;
     }
 
     /**
@@ -37,8 +37,8 @@ public class Item
     
     public String getLongDes()
     {
-        System.out.println(name + " " + description);
-        return description;
+        System.out.println(name + " " + idescription);
+        return idescription;
     }
     
     public String getName()
