@@ -9,24 +9,21 @@ import java.util.ArrayList;
 public class Player
 { 
     // instance variables - replace the example below with your own
-    private int health;
+    public int health;
     private int score;
     private int mcname;
     public HashMap<String, String> inven;
     public Item item;
     public Location location;
-    public int dispell;
-    public int defeat;
     /**
      * Constructor for objects of class Player
      */
     public Player()
     {
         // initialise instance variables
-        this.health = 5;
+        this.health = 3;
         this.score = 0;
         this.mcname = mcname;
-        this.dispell = 0;
         this.item = item;
         inven = new HashMap<>();
         inven.put("Strange Charm", "You don't remember how you got this");

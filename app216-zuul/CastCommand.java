@@ -30,10 +30,9 @@ public class CastCommand extends ZuulCommand
             System.out.println("Spells? You don't know any spells");
             return;
         }
-        else if(spell == "Ragnarok")
+        else if(spell == "Ragnarok" && zuul.MAP.dispell == false)
         {
-            zuul.PLAYER.dispell = 1; 
-            System.out.println("The massive door at the Centre Chamber has opened ");
+            zuul.MAP.dispell = true; 
         }
         else if(spell == "Nhilo")
         {
@@ -42,7 +41,7 @@ public class CastCommand extends ZuulCommand
         }
         else if(spell != "Ragnarok" && spell != "Nhilo")
         {
-            //gameover
+            zuul.PLAYER.decreaseHealth(zuul.PLAYER.health);
         }
 
         Map map = zuul.MAP;

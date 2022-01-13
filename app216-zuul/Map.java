@@ -22,6 +22,8 @@ public class Map
     public Location currentLocation;
     
     public Player player;
+    
+    public boolean dispell;
 
     /**
      * Constructor for objects of class Map
@@ -30,7 +32,7 @@ public class Map
     {
         createLocations();
         this.player = player;
-        
+        this.dispell = false;
     }
 
     /**
@@ -76,9 +78,10 @@ public class Map
         
         entrance.setExit("east", chamber);
         chamber.setExit("west", entrance);
-        //if (player.dispell == 1) 
+        if (dispell == true) 
         {
-            //chamber.setExit("east", stairs);
+            chamber.setExit("east", stairs);
+            System.out.println("The massive door at the Centre Chamber has opened ");
         }
     }
     
