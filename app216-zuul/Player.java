@@ -14,6 +14,8 @@ public class Player
     private int mcname;
     public HashMap<String, String> inven;
     public Item item;
+    public Location location;
+    public TakeCommand takecommand;
     public int dispell;
     public int defeat;
     /**
@@ -76,13 +78,25 @@ public class Player
     {
         inven.put(item.name, item.description);    
     }
-    
-   
+       
     /**
      * Display Inventory
      */
     public void printInv()
     {
         System.out.print(inven);
+    }
+    
+    /**
+     * Finds the item in the Hashmap
+     */
+    public String findItem()
+    {
+        
+        if(inven.containsKey(takecommand.take))
+        {
+            return item.name; 
+        }
+        return null;
     }
 }

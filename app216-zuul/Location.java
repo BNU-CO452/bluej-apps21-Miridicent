@@ -23,7 +23,7 @@ public class Location
     private String description;
     private HashMap<String, Location> exits;        // stores exits of this room.
     private Item item;
-    private HashMap<String, Item> items;
+    public HashMap<String, Item> items;
     /**
      * Create a location described "description". Initially, it has
      * no exits. "description" is something like "a kitchen" or

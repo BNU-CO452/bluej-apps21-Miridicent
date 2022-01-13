@@ -72,9 +72,8 @@ public class Map
      */
     private void createChamber()
     {
-        chamber = new Location("The chamber is large and derelict,  to the north and south are equally decrepit hallways,");
-        System.out.println("clearly someone hasn't been keeping the place clean.");
-        System.out.println("to the east is a large door with suspicious looking runes placed on it");
+        chamber = new Location("The chamber is large and derelict,  to the north and south are equally decrepit hallways, \n clearly someone hasn't been keeping the place clean. /n to the east is a large door with suspicious looking runes placed on it");
+        
         entrance.setExit("east", chamber);
         chamber.setExit("west", entrance);
         //if (player.dispell == 1) 
