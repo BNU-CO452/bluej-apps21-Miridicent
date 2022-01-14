@@ -69,4 +69,13 @@ public class Game
         System.out.println();
         System.out.println(MAP.getCurrentLocation().getLongDescription());
     }
+    
+    public void gameover()
+    {
+        if (PLAYER.health <= 0)
+        {
+            System.out.println("You've over exerted your mana, your consciouse slowly fades.\n you have a sickening feeling you won't wake up again.\n Game Over");
+            System.exit(0);
+        }
+    }
 }

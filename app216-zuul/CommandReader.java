@@ -21,7 +21,7 @@ public class CommandReader
 {
     private Game game;
     private Scanner reader; // source of command input
-
+    public Player player;
     private String commandWord = null;
     private String word2 = null;
     /**
@@ -101,4 +101,5 @@ public class CommandReader
         // Return false means the game is not over
         return false;
     }
+    
 }

@@ -41,7 +41,9 @@ public class CastCommand extends ZuulCommand
         }
         else if(spell != "Ragnarok" && spell != "Nhilo")
         {
-            zuul.PLAYER.decreaseHealth(zuul.PLAYER.health);
+            zuul.PLAYER.decreaseHealth();
+            System.out.println("You have " + zuul.PLAYER.health + " health left");
+            zuul.gameover();
         }
 
         Map map = zuul.MAP;

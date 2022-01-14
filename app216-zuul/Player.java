@@ -35,7 +35,7 @@ public class Player
      * @param  y  a sample parameter for a method
      * @return    the sum of x and y
      */
-    public int decreaseHealth(int health)
+    public int decreaseHealth()
     {
         health = health - 1; 
         return health;
