@@ -1,4 +1,4 @@
-
+import java.util.HashMap;
 /**
  * This command allows the player to
  * take or pickup an item from a room
@@ -14,6 +14,7 @@ public class TakeCommand extends ZuulCommand
     String get;
     public Item item;
     public Location location;
+    public HashMap<String, String> stuff;
     /**
      * Take an item from a location and add it
      * to the player's inventory.
@@ -22,6 +23,8 @@ public class TakeCommand extends ZuulCommand
     {
         super(zuul);
         this.get = get;
+        stuff = new HashMap<>();
+        stuff.put("ChamberKey", "An old rusty key");
     }    
 
     public void execute()
@@ -35,7 +38,7 @@ public class TakeCommand extends ZuulCommand
         else if(get != null)
         {
             //zuul.LOCATION.findItem(get);
-            if(get.contains("Chamber")) 
+            if(get == "ChamberKey") 
             {
                 if(zuul.PLAYER.inven.containsKey(get))
                 {
