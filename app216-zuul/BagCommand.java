@@ -27,6 +27,6 @@ public class BagCommand extends ZuulCommand
      */
     public void execute()
     {
-        System.out.println(zuul.PLAYER.inven);    
+        System.out.println(zuul.PLAYER.inventory);    
     }
 }

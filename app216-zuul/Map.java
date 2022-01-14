@@ -60,8 +60,7 @@ public class Map
     }
     
     /**
-     * Create the outside and link it to the
-     * theatre, lab and pub
+     * Create the entrance and link it 
      */
     private void createEntrance()
     {
@@ -72,7 +71,7 @@ public class Map
     }
     
     /**
-     * Create the pub and link it to the outside
+     * Create the chamber and link it
      */
     private void createChamber()
     {
@@ -88,7 +87,7 @@ public class Map
     }
     
     /**
-     * Create the theatre linked to the outside
+     * Create Hallwayone link it
      */
     private void createHallwayone()
     {
@@ -100,7 +99,7 @@ public class Map
     }
     
     /**
-     * Create the office linked to the lab
+     * Create Hallwaytwo and link it
      */
     private void createHallwaytwo()
     {
@@ -112,7 +111,7 @@ public class Map
     }
     
     /**
-     * Create the lab and link it to the outside and office
+     * Create the study and link it
      */
     private void createStudy()
     {
@@ -126,7 +125,7 @@ public class Map
     }
     
     /**
-     * Create the lab and link it to the outside and office
+     * Create the Magic lab and link it 
      */
     private void createMagiclab()
     {
@@ -140,7 +139,7 @@ public class Map
     }
     
     /**
-     * Create the lab and link it to the outside and office
+     * Create the Kitchen and link it 
      */
     private void createKitchen()
     {
@@ -154,7 +153,7 @@ public class Map
     }
     
     /**
-     * Create the lab and link it to the outside and office
+     * Create the Dineing room and link it 
      */
     private void createDining()
     {
@@ -167,7 +166,7 @@ public class Map
     }
     
     /**
-     * Create the lab and link it to the outside and office
+     * Create the stairs and link it 
      */
     private void createStairs()
     {
@@ -177,7 +176,7 @@ public class Map
     }
     
     /**
-     * Create the lab and link it to the outside and office
+     * Create the centre and link it 
      */
     private void createCentre()
     {
@@ -197,13 +196,29 @@ public class Map
         currentLocation = nextLocation;
     }
     
-    public void Win()
+    /**
+     * Finds the item in the items Hashmap
+     */
+    public String findItem()
     {
-        System.out.println("A purple bolt flys from your fingers killing the man");
-        System.out.println("In the moment the memories of who you are come rushing back");
-        System.out.println("You are the royal wizard, you were sent here in order to stop this man from unleashing a devastating spell on the world");
-        System.out.println("Looks like you will me returning with a heros welcome");
-        System.out.println("");
-        System.out.println("Thanks for playing");
+        if(location.items.containsKey(location.item.getName()))
+        {
+            return location.item.name; 
+        }
+        return null;
     }
+    
+    /**
+     * Finds the item description in the items Hashmap
+     */
+    public String findItemD()
+    {
+        if(location.items.containsKey(location.item.getName()))
+        {
+            return location.item.idescription; 
+        }
+        return null;
+    }
+    
+    
 }

@@ -37,7 +37,13 @@ public class CastCommand extends ZuulCommand
         else if(spell == "Nhilo")
         {
             //defeat = 1;
-            zuul.MAP.Win();
+            System.out.println("A purple bolt flys from your fingers killing the man");
+            System.out.println("In the moment the memories of who you are come rushing back");
+            System.out.println("You are the royal wizard, you were sent here in order to stop this man from unleashing a devastating spell on the world");
+            System.out.println("Looks like you will me returning with a heros welcome");
+            System.out.println("");
+            System.out.println("Thanks for playing");
+            System.exit(0);
         }
         else if(spell != "Ragnarok" && spell != "Nhilo")
         {

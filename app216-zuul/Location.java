@@ -22,7 +22,7 @@ public class Location
 {
     private String description;
     private HashMap<String, Location> exits;        // stores exits of this room.
-    private Item item;
+    public Item item;
     public HashMap<String, Item> items;
     public TakeCommand takecommand;
     /**
@@ -90,7 +90,9 @@ public class Location
         }
         return returnString;
     }
-    
+    /**
+     * get the item String 
+     */
     private String getItemString()
     {
         if (item != null)
@@ -113,28 +115,5 @@ public class Location
         return exits.get(direction);
     }
     
-    /**
-     * Finds the item in the Hashmap
-     */
-    public String findItem(String get)
-    {
-        if(items.containsKey(item.getName()))
-        {
-            return item.name; 
-        }
-        return null;
-    }
-    
-    /**
-     * Finds the item description in the Hashmap
-     */
-    public String findItemD(String get)
-    {
-        if(items.containsKey(item.getName()))
-        {
-            return item.idescription; 
-        }
-        return null;
-    }
 }
 

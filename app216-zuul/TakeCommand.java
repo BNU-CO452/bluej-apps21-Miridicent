@@ -14,7 +14,6 @@ public class TakeCommand extends ZuulCommand
     String get;
     public Item item;
     public Location location;
-    public HashMap<String, String> stuff;
     /**
      * Take an item from a location and add it
      * to the player's inventory.
@@ -23,8 +22,7 @@ public class TakeCommand extends ZuulCommand
     {
         super(zuul);
         this.get = get;
-        stuff = new HashMap<>();
-        stuff.put("ChamberKey", "An old rusty key");
+        
     }    
 
     public void execute()
@@ -35,16 +33,17 @@ public class TakeCommand extends ZuulCommand
             System.out.println("Take what?");
             return;
         }
-        else if(get != null && get == "ChamberKey")
-        {
-            zuul.PLAYER.inven.put("Chamber key", "an old rusty key");
-            System.out.println("Item added");
-        }
-    }
-
-    Map map = zuul.MAP;
-    // remove the item from the current room
-    // and add it to the player's inventory
-    // Print out a suitable message.
     
+
+        Map map = zuul.MAP;
+        Player player = zuul.PLAYER;
+        // remove the item from the current room
+        // and add it to the player's inventory
+        // Print out a suitable message.
+        if(item.getName().equals("ChamberKey"))
+        {
+            player.inventory.add(item);
+           
+        }
+    }    
 }

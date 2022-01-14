@@ -12,7 +12,8 @@ public class Player
     public int health;
     private int score;
     private int mcname;
-    public HashMap<String, String> inven;
+    ArrayList <Item> inventory;
+    public HashMap<String, Item> inven;
     public Item item;
     public Location location;
     /**
@@ -26,7 +27,7 @@ public class Player
         this.mcname = mcname;
         this.item = item;
         inven = new HashMap<>();
-        
+        inventory = new ArrayList <>();
     }
 
     /**
@@ -71,9 +72,9 @@ public class Player
     /**
      * Add Item to inven
      */
-    public void addInv(String name, String Description)
+    public void addInv(Item item)
     {
-        inven.put(item.name, item.idescription);    
+        inventory.add(item);    
     }
        
     /**
@@ -81,7 +82,7 @@ public class Player
      */
     public void printInv()
     {
-        System.out.print(inven);
+        System.out.print(inventory);
     }
     
 }
