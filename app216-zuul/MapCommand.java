@@ -7,7 +7,7 @@
  */
 public class MapCommand extends ZuulCommand
 {
-    String map;
+    String area;
 
     /**
      * Constructor for objects of class MapCommand
@@ -15,9 +15,13 @@ public class MapCommand extends ZuulCommand
     public MapCommand(Game zuul)
     {
         super(zuul);
-        this.map = map;
+        this.area = area;
     }
-
+   
+    Map map = zuul.MAP;
+    
+    Location currentLocation = map.getCurrentLocation();
+    
     /**
      * An example of a method - replace this comment with your own
      *

@@ -34,16 +34,22 @@ public class TakeCommand extends ZuulCommand
         }
         else if(get != null)
         {
-            zuul.LOCATION.findItem(get);
-            if(zuul.LOCATION.findItem(get).contains(get))
+            //zuul.LOCATION.findItem(get);
+            if(get.contains("Chamber")) 
             {
-                zuul.LOCATION.findItemD(get);
-                zuul.PLAYER.addInv(item.name, item.idescription);
-                System.out.print("Item added to Inventory");
+                if(zuul.PLAYER.inven.containsKey(get))
+                {
+                    System.out.print("You've already picked that up");
+                }
+                else
+                {
+                    zuul.PLAYER.inven.put("ChamberKey", "an old rusty key");
+                    System.out.print("Item added to Inventory");
+             }
             }
-            else
+            else 
             {
-                System.out.println("You can't take that");
+                System.out.print("You can't take that ");
             }
         }
         Map map = zuul.MAP;
