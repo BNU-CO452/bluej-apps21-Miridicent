@@ -71,7 +71,7 @@ public class Player
     /**
      * Add Item to inven
      */
-    public void addInv(String name, String description)
+    public void addInv(Item item)
     {
         inven.put(item.name, item.idescription);    
     }

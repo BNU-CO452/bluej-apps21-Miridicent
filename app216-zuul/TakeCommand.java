@@ -35,29 +35,16 @@ public class TakeCommand extends ZuulCommand
             System.out.println("Take what?");
             return;
         }
-        else if(get != null)
+        else if(get != null && get == "ChamberKey")
         {
-            //zuul.LOCATION.findItem(get);
-            if(get == "ChamberKey") 
-            {
-                if(zuul.PLAYER.inven.containsKey(get))
-                {
-                    System.out.print("You've already picked that up");
-                }
-                else
-                {
-                    zuul.PLAYER.inven.put("ChamberKey", "an old rusty key");
-                    System.out.print("Item added to Inventory");
-             }
-            }
-            else 
-            {
-                System.out.print("You can't take that ");
-            }
+            zuul.PLAYER.inven.put("Chamber key", "an old rusty key");
+            System.out.println("Item added");
         }
-        Map map = zuul.MAP;
-        // remove the item from the current room
-        // and add it to the player's inventory
-        // Print out a suitable message.
     }
+
+    Map map = zuul.MAP;
+    // remove the item from the current room
+    // and add it to the player's inventory
+    // Print out a suitable message.
+    
 }

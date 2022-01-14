@@ -1,0 +1,113 @@
+Game game3 = new Game();
+The walls are cracked and the floor is withering away and the sound of battle rages outside the ironclad doors
+To the east there appears to be a large chamber
+
+ Welcome to the World of Zuul!
+ World of Zuul is a new, incredibly boring adventure game.
+ Type 'help' if you need help.
+
+You stand in the entrance,something isn't right here..
+ Exits: east.
+items:  ChamberKey 
+ > go east
+The chamber is large and derelict,  to the north and south are equally decrepit hallways, 
+ clearly someone hasn't been keeping the place clean. 
+ to the east is a large door with suspicious looking runes placed on it.
+ Exits: south north west.
+ 
+ > go north
+A decrepit hallway meets you. 
+ to the west is a room full of books and paper,
+ to the east is what appears to be a lab of some sort  .
+ Exits: east south west.
+ 
+ > go home
+There is no exit in this direction!
+ > go south
+The chamber is large and derelict,  to the north and south are equally decrepit hallways, 
+ clearly someone hasn't been keeping the place clean. 
+ to the east is a large door with suspicious looking runes placed on it.
+ Exits: south north west.
+ 
+ > go south
+The hallway is old and cracked,
+ to the west there seems to be a white room full cooking tools, 
+ to the east a long table with over a dozen chairs.
+ Exits: east north west.
+ 
+ > go norht
+There is no exit in this direction!
+ > go north
+The chamber is large and derelict,  to the north and south are equally decrepit hallways, 
+ clearly someone hasn't been keeping the place clean. 
+ to the east is a large door with suspicious looking runes placed on it.
+ Exits: south north west.
+ 
+ > go north
+A decrepit hallway meets you. 
+ to the west is a room full of books and paper,
+ to the east is what appears to be a lab of some sort  .
+ Exits: east south west.
+ 
+ > go west
+books and paper are scattered all over the floor and the book shelves look like there about to collapse,
+ this study hasn't been used in a long time.
+ Exits: east.
+items:  spell 1 
+ > go east
+A decrepit hallway meets you. 
+ to the west is a room full of books and paper,
+ to the east is what appears to be a lab of some sort  .
+ Exits: east south west.
+ 
+ > go east
+Vials of bizarre looking mixtures line the table as well as burners, 
+ beakers and a complex looking book about the lifecycle of the rascetseen (Whatever that is).
+ Exits: west.
+items:  spell 2 
+ > go west
+A decrepit hallway meets you. 
+ to the west is a room full of books and paper,
+ to the east is what appears to be a lab of some sort  .
+ Exits: east south west.
+ 
+ > go south
+The chamber is large and derelict,  to the north and south are equally decrepit hallways, 
+ clearly someone hasn't been keeping the place clean. 
+ to the east is a large door with suspicious looking runes placed on it.
+ Exits: south north west.
+ 
+ > go south
+The hallway is old and cracked,
+ to the west there seems to be a white room full cooking tools, 
+ to the east a long table with over a dozen chairs.
+ Exits: east north west.
+ 
+ > go west
+The kitchen despite being old is surprisingly normal compared to a lot of the castle, 
+ it's walls are lined with ovens stoves and some strage box contraption labled as a Microwave.
+ Exits: east.
+items:  spell 3 
+ > go east
+The hallway is old and cracked,
+ to the west there seems to be a white room full cooking tools, 
+ to the east a long table with over a dozen chairs.
+ Exits: east north west.
+ 
+ > go east
+The dining table present here looks as if it could hold a small army of people and yet it stands quite empty now.
+ Exits: west.
+items:  spell 4 
+ > go west
+The hallway is old and cracked,
+ to the west there seems to be a white room full cooking tools, 
+ to the east a long table with over a dozen chairs.
+ Exits: east north west.
+ 
+ > go north
+The chamber is large and derelict,  to the north and south are equally decrepit hallways, 
+ clearly someone hasn't been keeping the place clean. 
+ to the east is a large door with suspicious looking runes placed on it.
+ Exits: south north west.
+ 
+ > 
