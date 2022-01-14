@@ -21,6 +21,8 @@ public class Game
 {
     public final Map MAP;
     public final Player PLAYER;
+    public Location LOCATION;
+    public Item ITEM;
     private CommandReader reader;
     private boolean gameOver;
         
@@ -31,6 +33,7 @@ public class Game
     {
         PLAYER = new Player();
         MAP = new Map(PLAYER);
+        LOCATION = new Location("location");
         reader = new CommandReader(this);
         play();
     }

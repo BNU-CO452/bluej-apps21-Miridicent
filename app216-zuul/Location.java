@@ -116,11 +116,23 @@ public class Location
     /**
      * Finds the item in the Hashmap
      */
-    public String findItem()
+    public String findItem(String get)
     {
         if(items.containsKey(item.getName()))
         {
             return item.name; 
+        }
+        return null;
+    }
+    
+    /**
+     * Finds the item description in the Hashmap
+     */
+    public String findItemD(String get)
+    {
+        if(items.containsKey(item.getName()))
+        {
+            return item.idescription; 
         }
         return null;
     }

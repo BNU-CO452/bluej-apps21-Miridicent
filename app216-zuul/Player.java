@@ -26,7 +26,7 @@ public class Player
         this.mcname = mcname;
         this.item = item;
         inven = new HashMap<>();
-        inven.put("Strange Charm", "You don't remember how you got this");
+        
     }
 
     /**

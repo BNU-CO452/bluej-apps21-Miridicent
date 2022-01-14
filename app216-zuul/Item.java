@@ -1,4 +1,4 @@
-
+import java.util.HashMap;
 /**
  * Write a description of class Item here.
  *
@@ -11,11 +11,10 @@ public class Item
     public int id;
     public String name;
     public String idescription;
-    
     /**
      * Constructor for objects of class Item
      */
-    public Item(String name, String description, int id)
+    public Item(String name, String idescription, int id)
     {
         // initialise instance variables
         this.id = id;

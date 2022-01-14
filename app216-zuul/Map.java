@@ -1,4 +1,4 @@
-
+import java.util.HashMap;
 /**
  * This class is reponsible for creating and
  * linking all the Locations in the game to
@@ -21,10 +21,12 @@ public class Map
 
     public Location currentLocation;
     
+    public Location location;
+    
     public Player player;
     
     public boolean dispell;
-
+    
     /**
      * Constructor for objects of class Map
      */

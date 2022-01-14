@@ -34,9 +34,10 @@ public class TakeCommand extends ZuulCommand
         }
         else if(get != null)
         {
-            location.findItem();
-            if(location.findItem().contains(get))
+            zuul.LOCATION.findItem(get);
+            if(zuul.LOCATION.findItem(get).contains(get))
             {
+                zuul.LOCATION.findItemD(get);
                 zuul.PLAYER.addInv(item.name, item.idescription);
                 System.out.print("Item added to Inventory");
             }
