@@ -70,6 +70,9 @@ public class Game
         System.out.println(MAP.getCurrentLocation().getLongDescription());
     }
     
+    /**
+     * ends the game when the player runs out of health
+     */
     public void gameover()
     {
         if (PLAYER.health <= 0)

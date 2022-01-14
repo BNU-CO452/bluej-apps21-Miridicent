@@ -23,10 +23,7 @@ public class Item
     }
 
     /**
-     * An example of a method - replace this comment with your own
-     *
-     * @param  y  a sample parameter for a method
-     * @return    the sum of x and y
+     * Gets the short description for the item
      */
     public void getShortDes()
     {
@@ -34,12 +31,18 @@ public class Item
         
     }
     
+    /**
+     * Gets the long description from the item 
+     */
     public String getLongDes()
     {
         System.out.println(name + " " + idescription);
         return idescription;
     }
     
+    /**
+     * Gets the item name
+     */
     public String getName()
     {
         return name;

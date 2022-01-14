@@ -11,7 +11,9 @@
 public class GoCommand extends ZuulCommand
 {
     String direction;
-    
+    /**
+     * allows movement between the areas
+     */
     public GoCommand(Game zuul, String direction)
     {
         super(zuul);

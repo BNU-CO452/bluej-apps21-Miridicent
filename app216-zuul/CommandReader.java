@@ -60,7 +60,10 @@ public class CommandReader
 
         return executeCommand();
     }
-
+    
+    /**
+     * executes command words when inputed 
+     */
     private boolean executeCommand()
     {
         if(commandWord.equals(CommandWords.GO.word))

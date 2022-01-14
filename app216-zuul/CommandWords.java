@@ -19,7 +19,9 @@ public enum CommandWords
     
     public final String word;
     public final String description;
-    
+    /**
+     * Constructor for the command words 
+     */
     CommandWords(String word, String description)
     {
         this.word = word;

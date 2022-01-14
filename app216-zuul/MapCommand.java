@@ -23,10 +23,7 @@ public class MapCommand extends ZuulCommand
     Location currentLocation = map.getCurrentLocation();
     
     /**
-     * An example of a method - replace this comment with your own
-     *
-     * @param  y  a sample parameter for a method
-     * @return    the sum of x and y
+     * allows the player to view the map
      */
     public void execute()
     {

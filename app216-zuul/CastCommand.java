@@ -12,7 +12,7 @@ public class CastCommand extends ZuulCommand
     
     
     /**
-     * Constructor for objects of class CastCommand
+     * Constructor for objects of class CastCommand, allows for casting spells
      */
     public CastCommand(Game zuul, String spell)
     {
