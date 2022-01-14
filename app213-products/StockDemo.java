@@ -124,9 +124,7 @@ public class StockDemo
    private void findProductname()
    {
        System.out.print("Name search List");
-       System.out.println();
-       stock.findName("Cure Minor");
-       stock.findName("Cure Alls");
+       stock.findName("Cure");
    }
    
    /**

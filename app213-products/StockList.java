@@ -93,7 +93,7 @@ public class StockList
     {
         for(Product product : stock)
         {
-            if(product.getName() == productName)
+            if(product.getName().contains(productName))
             System.out.println(product);
         }
         return null;
