@@ -30,7 +30,7 @@ public class CastCommand extends ZuulCommand
             System.out.println("Spells? You don't know any spells");
             return;
         }
-        else if(spell == "Ragnarok" && zuul.MAP.dispell == false)
+        else if(spell.equals("Ragnarok") && zuul.MAP.dispell == false)
         {
             zuul.MAP.dispell = true; 
         }
