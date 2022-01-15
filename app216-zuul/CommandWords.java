@@ -15,7 +15,8 @@ public enum CommandWords
     QUIT ("quit", "End the game"),
     CAST ("cast", "Cast a spell"),
     MAP  ("map", "See the map"),
-    BAG  ("bag", "See Inventory");
+    BAG  ("bag", "See Inventory"),
+    NHILO ("nhilo","?");
     
     public final String word;
     public final String description;

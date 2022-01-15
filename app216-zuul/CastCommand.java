@@ -9,7 +9,7 @@ public class CastCommand extends ZuulCommand
 {
     // instance variables - replace the example below with your own
     String spell;
-    
+    String nhilo;
     
     /**
      * Constructor for objects of class CastCommand, allows for casting spells
@@ -19,7 +19,7 @@ public class CastCommand extends ZuulCommand
         // initialise instance variables
         super(zuul);
         this.spell = spell;
-        
+        this.nhilo = "nhilo";
     }
 
     public void execute()
@@ -34,7 +34,7 @@ public class CastCommand extends ZuulCommand
         {
             zuul.MAP.dispell = true; 
         }
-        else if(spell == "Nhilo")
+        else if(spell == nhilo)
         {
             //defeat = 1;
             System.out.println("A purple bolt flys from your fingers killing the man");

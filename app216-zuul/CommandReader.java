@@ -96,6 +96,11 @@ public class CommandReader
             BagCommand bag = new BagCommand(game);
             bag.execute();
         }
+        else if(commandWord.equals(CommandWords.NHILO.word))
+        {
+            NhiloCommand nhilo = new NhiloCommand(game);
+            nhilo.execute();
+        }
         else if(commandWord.equals(CommandWords.QUIT.word))
         {
             return true;  // game over
