@@ -16,7 +16,7 @@ public enum CommandWords
     CAST ("cast", "Cast a spell"),
     MAP  ("map", "See the map"),
     BAG  ("bag", "See Inventory"),
-    NHILO ("nhilo","?");
+    NHILO ("nhilo","Use when time are most dire");
     
     public final String word;
     public final String description;
