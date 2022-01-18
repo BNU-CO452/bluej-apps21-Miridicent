@@ -1,3 +1,4 @@
+import java.util.Map;
 
 /**
  * Write a description of class BagCommand here.
@@ -24,6 +25,9 @@ public class BagCommand extends ZuulCommand
      */
     public void execute()
     {
-        System.out.println(zuul.PLAYER.inventory);    
+        for(Map.Entry<String, String> entry : zuul.PLAYER.inven.entrySet())
+        {
+            System.out.println( entry.getKey() + "=> " + entry.getValue());
+        }
     }
 }

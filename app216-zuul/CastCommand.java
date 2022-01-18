@@ -2,14 +2,14 @@
 /**
  * Write a description of class CastCommand here.
  *
- * @author (your name)
+ * @author (Conor Briggs)
  * @version (a version number or a date)
  */
 public class CastCommand extends ZuulCommand
 {
     // instance variables - replace the example below with your own
     String spell;
-    String nhilo;
+    
     
     /**
      * Constructor for objects of class CastCommand, allows for casting spells
@@ -19,22 +19,28 @@ public class CastCommand extends ZuulCommand
         // initialise instance variables
         super(zuul);
         this.spell = spell;
-        this.nhilo = "nhilo";
     }
 
     public void execute()
     {
+        Map map = zuul.MAP;
         if(spell == null) 
         {
             // if there is no second word, we don't know what to take...
             System.out.println("Spells? You don't know any spells");
             return;
         }
-        else if(spell.equals("Ragnarok") && zuul.MAP.dispell == false)
+        else if(spell.equals("ragnarok") && zuul.MAP.dispell == false)
         {
             zuul.MAP.dispell = true; 
+            System.out.println("the door at the center of the chamber has opened ");
+            zuul.MAP.createCentre();
         }
-        else if(spell == nhilo)
+        else if(spell.equals("ragnarok") && zuul.MAP.dispell == true)
+        {
+            System.out.println("The door is wide open");
+        }
+        else if(spell.equals("nhilo"))
         {
             //defeat = 1;
             System.out.println("A purple bolt flys from your fingers killing the man");
@@ -45,14 +51,14 @@ public class CastCommand extends ZuulCommand
             System.out.println("Thanks for playing");
             System.exit(0);
         }
-        else if(spell != "Ragnarok" && spell != "Nhilo")
+        else if(spell != "ragnarok" && spell != "nhilo")
         {
             zuul.PLAYER.decreaseHealth();
             System.out.println("You have " + zuul.PLAYER.health + " health left");
             zuul.gameover();
         }
 
-        Map map = zuul.MAP;
         
+        Location currentLocation = map.getCurrentLocation();
     }
 }

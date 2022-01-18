@@ -67,7 +67,6 @@ public class Map
         entrance = new Location("You stand in the entrance,something isn't right here.");
         System.out.println("The walls are cracked and the floor is withering away and the sound of battle rages outside the ironclad doors");
         System.out.println("To the east there appears to be a large chamber");
-        entrance.setItem(new Item("ChamberKey", "an old rusty key" , 101));
     }
     
     /**
@@ -75,15 +74,11 @@ public class Map
      */
     private void createChamber()
     {
-        chamber = new Location("The chamber is large and derelict,  to the north and south are equally decrepit hallways, \n clearly someone hasn't been keeping the place clean. \n to the east is a large door with suspicious looking runes placed on it");
+        chamber = new Location("The chamber is large and derelict,  to the north and south are equally decrepit hallways, \n clearly someone hasn't been keeping the place clean. \n to the east is a large door with suspicious looking runes placed on it. \n to get through you may need to CAST a spell ");
         
         entrance.setExit("east", chamber);
         chamber.setExit("west", entrance);
-        if (dispell == true) 
-        {
-            chamber.setExit("east", stairs);
-            System.out.println("The massive door at the Centre Chamber has opened ");
-        }
+        
     }
     
     /**
@@ -119,7 +114,7 @@ public class Map
         study = new Location("books and paper are scattered all over the floor and the book shelves look like there about to collapse,\n this study hasn't been used in a long time");
 
            
-        study.setItem(new Item("spell 1", "A compleatly full note book, one spell stands out, The first part reads rag-----, the rest is faded", 102));
+        study.setItem(new Item("Notebook", "A compleatly full note book, one spell stands out, The first part reads rag-----, the rest is faded", 102));
         hallwayone.setExit("west", study);
         study.setExit("east", hallwayone);
     }
@@ -132,7 +127,7 @@ public class Map
         // create the Locations
         magiclab = new Location("Vials of bizarre looking mixtures line the table as well as burners, \n beakers and a complex looking book about the lifecycle of the rascetseen (Whatever that is)");
         
-        magiclab.setItem(new Item("spell 2", "research papers based around dispelling a spell used to seal doors, the eligible part reads ---na---", 103));
+        magiclab.setItem(new Item("Textbook", "research papers based around dispelling a spell used to seal doors, the eligible part reads ---na---", 103));
 
         hallwayone.setExit("east", magiclab);
         magiclab.setExit("west", hallwayone);
@@ -146,7 +141,7 @@ public class Map
         // create the Locations
         kitchen = new Location("The kitchen despite being old is surprisingly normal compared to a lot of the castle, \n it's walls are lined with ovens stoves and some strage box contraption labled as a Microwave");
         
-        kitchen.setItem(new Item("spell 3", "spell instructions hidden amongst the cook books, The only part you can make out is -----r--", 103));
+        kitchen.setItem(new Item("Cookbook", "spell instructions hidden amongst the cook books, The only part you can make out is -----r--", 103));
 
         hallwaytwo.setExit("west", kitchen);
         kitchen.setExit("east", hallwaytwo);
@@ -160,7 +155,7 @@ public class Map
         // create the Locations
         dining = new Location("The dining table present here looks as if it could hold a small army of people and yet it stands quite empty now");
         
-        dining.setItem(new Item("spell 4", "innocent looking book, actually contains spells, one looks more important than the rest, You make out ------ok", 104));
+        dining.setItem(new Item("Storybook", "innocent looking book, actually contains spells, one looks more important than the rest, You make out ------ok", 104));
         hallwaytwo.setExit("east", dining);
         dining.setExit("west", hallwaytwo);
     }
@@ -171,19 +166,23 @@ public class Map
     private void createStairs()
     {
         // create the Locations
-        stairs = new Location("The staircase spirals downwards in to an inky black abyss, \n who knows what horrors lurk in the depths (you haven't seen any monsters yet but who knows");
+        stairs = new Location("The staircase spirals downwards in to an inky black abyss, \n who knows what horrors lurk in the depths (you haven't seen any monsters yet but who knows)");
         
     }
     
     /**
      * Create the centre and link it 
      */
-    private void createCentre()
+    public void createCentre()
     {
         // create the Locations
-        centre = new Location("a strangly familier figure stands at the centre of a large swirling room look at battle taking place outside the walls of the castle");
-        
+        centre = new Location("a strangly familier figure stands at the centre of a large swirling room looking at a battle taking place outside the walls of the castle. \n a faint wisper can be heard at the back of your mind. \n it's saying nhilo magic can stop him... ");
         stairs.setExit("east", centre);
+        if (dispell == true) 
+        {
+            chamber.setExit("east", stairs);
+            
+        }
     }
     
     public Location getCurrentLocation()

@@ -13,7 +13,7 @@ public class Player
     private int score;
     private int mcname;
     ArrayList <Item> inventory;
-    public HashMap<String, Item> inven;
+    public HashMap<String, String> inven;
     public Item item;
     public Location location;
     /**
