@@ -2,7 +2,7 @@
 /**
  * Write a description of class MapCommand here.
  *
- * @author (your name)
+ * @author (Conor Briggs)
  * @version (a version number or a date)
  */
 public class MapCommand extends ZuulCommand

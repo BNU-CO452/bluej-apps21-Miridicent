@@ -3,7 +3,7 @@ import java.util.Map;
 /**
  * Write a description of class BagCommand here.
  *
- * @author (your name)
+ * @author (Conor Briggs)
  * @version (a version number or a date)
  */
 public class BagCommand extends ZuulCommand
