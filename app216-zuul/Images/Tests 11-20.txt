@@ -1,0 +1,81 @@
+Game game1 = new Game();
+The walls are cracked and the floor is withering away and the sound of battle rages outside the ironclad doors
+To the east there appears to be a large chamber
+
+ Welcome to the World of Zuul!
+ World of Zuul is a new, incredibly boring adventure game.
+ Type 'help' if you need help.
+
+You stand in the entrance,something isn't right here..
+ Exits: east.
+ 
+ > go east
+The chamber is large and derelict,  to the north and south are equally decrepit hallways, 
+ clearly someone hasn't been keeping the place clean. 
+ to the east is a large door with suspicious looking runes placed on it. 
+ to get through you may need to CAST a spell .
+ Exits: south north west.
+ 
+ > go west
+You stand in the entrance,something isn't right here..
+ Exits: east.
+ 
+ > help
+ A vision fills your mind
+ they reveal secrets and truths of the world.
+
+ Your command words are:
+
+ go	  : Exit location in <direction>
+ take	  : Take <item> from location
+ help	  : List all available commands
+ quit	  : End the game
+ cast	  : Cast a spell
+ map	  : See the map
+ bag	  : See Inventory
+
+ e.g. go west, take gold
+
+You stand in the entrance,something isn't right here..
+ Exits: east.
+ 
+ > bag
+ > take notebook
+Item Added
+ > take cookbook
+Item Added
+ > bag
+Notebook=> A compleatly full note book, one spell stands out, The first part reads rag-----, the rest is faded
+Cookbook=> spell instructions hidden amongst the cook books, The only part you can make out is -----r--
+ > take textbook
+Item Added
+ > take cookbook
+Item Added
+ > bag
+Notebook=> A compleatly full note book, one spell stands out, The first part reads rag-----, the rest is faded
+Textbook=> research papers based around dispelling a spell used to seal doors, the eligible part reads ---na---
+Cookbook=> spell instructions hidden amongst the cook books, The only part you can make out is -----r--
+ > take storybook
+Item Added
+ > cast ragnarok
+the door at the center of the chamber has opened 
+ > cast nhilo
+A purple bolt flys from your fingers killing the man
+In the moment the memories of who you are come rushing back
+You are the royal wizard, you were sent here in order to stop this man from unleashing a devastating spell on the world
+Looks like you will me returning with a heros welcome
+
+Thanks for playing
+Game game1 = new Game();
+The walls are cracked and the floor is withering away and the sound of battle rages outside the ironclad doors
+To the east there appears to be a large chamber
+
+ Welcome to the World of Zuul!
+ World of Zuul is a new, incredibly boring adventure game.
+ Type 'help' if you need help.
+
+You stand in the entrance,something isn't right here..
+ Exits: east.
+ 
+ > quit
+Thank you for playing.  Good bye.
